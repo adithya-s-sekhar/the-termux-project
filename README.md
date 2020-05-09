@@ -1,18 +1,20 @@
-This is the setup script for configuring termux and some scripts made for my usage. Also my first repo, using this to learn git.
+My first repo, using this to learn git.
 
+# This isn't meant to be used by anyone just sharing here. I take no responsibilities.
 Feel free to judge and criticize, I'm learning after all.
 
-#Installation
+This is the setup script for configuring termux and some scripts made for my usage. 
+# Installation
 
 1. Install termux from Play Store/F-Droid
-2. Grant storage permission to the app by typing termux-setup-storage
-3. Install git by pkg install git
-4. Clone this repo with git clone https://github.com/adithya-s-sekhar/termuxforadithya
-5. CD into repo directory with cd termuxforadithya
-6. Type sh install.sh to begin installation
+2. Grant storage permission to the app by typing 'termux-setup-storage'
+3. Install git by 'pkg install git'
+4. Clone this repo with 'git clone https://github.com/adithya-s-sekhar/termuxforadithya'
+5. CD into repo directory with 'cd termuxforadithya'
+6. Type 'sh install.sh' to begin installation
  After installation, restart termux.
  
-#Dependancies (installed automatically)
+# Dependancies (installed automatically)
 
 1. python3
 2. ffmpeg
