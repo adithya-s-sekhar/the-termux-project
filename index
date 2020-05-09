@@ -12,7 +12,7 @@ banner
 echo '1. WaStatus'
 echo '2. aria2 Manager'
 echo '3. youtube-dl (soon)'
-echo '4. Exit this menu'
+echo 'Press ENTER to skip this menu'
 
 read i
 if [ $i -eq 1 ]
