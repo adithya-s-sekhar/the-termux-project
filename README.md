@@ -1,1 +1,1 @@
-Just a bunch of scripts, my first repo, just having fun
+These is the setup script for configuring termux for my usage. Also my first repo, using this to learn git.
