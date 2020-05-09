@@ -8,7 +8,7 @@ mv bash.bashrc.bak bash.bashrc
 
 # Uninstall ffmpeg, aria2
 apt remove ffmpeg aria2 -y
-apt autoremove
+apt autoremove -y
 
 # Remove scripts
 rm /data/data/com.termux/files/usr/bin/banner
