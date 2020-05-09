@@ -21,6 +21,9 @@ then
 elif [ $i -eq 2 ]
 then
 	download
+elif [ $i -eq 3 ]
+then
+	index
 else
 	clear
 fi
