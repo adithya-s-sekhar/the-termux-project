@@ -20,7 +20,7 @@ then
 	wastatus
 elif [ $i -eq 2 ]
 then
-	download
+	aria2manager
 elif [ $i -eq 3 ]
 then
 	index

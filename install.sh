@@ -29,7 +29,7 @@ dos2unix wastatus
 dos2unix wastatus-header
 dos2unix wastatus-video
 dos2unix wastatus-audio
-dos2unix download
+dos2unix aria2manager
 
 # Copy custom scripts to /usr/bin
 cp header /data/data/com.termux/files/usr/bin
@@ -38,7 +38,7 @@ cp wastatus /data/data/com.termux/files/usr/bin
 cp wastatus-header /data/data/com.termux/files/usr/bin
 cp wastatus-video /data/data/com.termux/files/usr/bin
 cp wastatus-audio /data/data/com.termux/files/usr/bin
-cp download /data/data/com.termux/files/usr/bin
+cp aria2manager /data/data/com.termux/files/usr/bin
 
 cd ..
 
@@ -49,5 +49,4 @@ chmod +x /data/data/com.termux/files/usr/bin/wastatus
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-header
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-video
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio
-chmod +x /data/data/com.termux/files/usr/bin/download
-chmod +x /data/data/com.termux/files/usr/bin/dl-header
+chmod +x /data/data/com.termux/files/usr/bin/aria2manager
