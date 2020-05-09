@@ -6,11 +6,8 @@ cd /data/data/com.termux/files/usr/etc
 rm bash.bashrc
 mv bash.bashrc.bak bash.bashrc
 
-# Uninstall youtube-dl
-pip uninstall -y youtube-dl
-
 # Uninstall ffmpeg, aria2 and python
-apt remove ffmpeg aria2 python -y
+apt remove ffmpeg aria2 -y
 
 # Remove scripts
 rm /data/data/com.termux/files/usr/bin/banner
