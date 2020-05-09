@@ -2,6 +2,7 @@
 # Author: Adithya S Sekhar
 
 # Delete newbash and restore old bash
+cd /data/data/com.termux/files/usr/etc
 rm bash.bashrc
 mv bash.bashrc.bak bash.bashrc
 
