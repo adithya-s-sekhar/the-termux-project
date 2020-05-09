@@ -7,6 +7,9 @@
 apt update
 apt upgrade -y
 
+# Load custom bash.bashrc
+cp bash.bashrc /data/data/com.termux/files/usr/etc
+
 # Install wget, ffmpeg, aria2 and python
 apt install wget -y
 apt install ffmpeg -y
@@ -51,6 +54,3 @@ chmod +x download
 chmod +x dl-header
 
 cd ..
-
-# Load custom bash.bashrc
-cp bash.bashrc /data/data/com.termux/files/usr/etc
