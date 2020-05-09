@@ -51,7 +51,6 @@ then
 	read wa_scalew
 	echo 'Scale Height: '
 	read wa_scaleh
-	echo working && :
 	if [ $wa_crop = "y" ]
 	then
 		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:0:$wa_cropy,scale=$wa_scalew:$wa_scaleh,transpose=1" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
