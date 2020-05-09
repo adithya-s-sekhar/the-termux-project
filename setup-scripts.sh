@@ -3,7 +3,7 @@
 # Initial Date: 09/May/2020
 # Current Date: 09/May/2020
 
-cd /sdcard/termux-config/scripts
+cd scripts
 
 # dos2unix conversion for scripts
 dos2unix header
@@ -36,4 +36,4 @@ chmod +x wastatus-audio
 chmod +x download
 chmod +x dl-header
 
-cd /sdcard/termux-config
+cd ..

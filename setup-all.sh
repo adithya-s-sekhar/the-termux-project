@@ -13,5 +13,3 @@ sh setup-scripts.sh
 
 # Install bashrc
 sh setup-bash.sh
-
-exit
