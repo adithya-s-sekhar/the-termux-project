@@ -6,7 +6,7 @@ cd /data/data/com.termux/files/usr/etc
 rm bash.bashrc
 mv bash.bashrc.bak bash.bashrc
 
-# Uninstall ffmpeg, aria2 and python
+# Uninstall ffmpeg, aria2
 apt remove ffmpeg aria2 -y
 apt autoremove
 
