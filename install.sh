@@ -11,7 +11,7 @@ apt upgrade -y
 cp bash.bashrc /data/data/com.termux/files/usr/etc
 
 # Install ffmpeg, aria2 and python
-apt install ffmpeg aria2 python
+apt install ffmpeg aria2 python -y
 
 # Upgrade pip and install youtube-dl
 pip install --upgrade pip
