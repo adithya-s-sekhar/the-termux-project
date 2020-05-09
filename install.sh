@@ -20,8 +20,6 @@ apt install aria2 -y
 pip install --upgrade pip
 pip install youtube-dl
 
-cd scripts
-
 # dos2unix conversion for scripts
 dos2unix banner
 dos2unix index
@@ -39,8 +37,6 @@ cp wastatus-banner /data/data/com.termux/files/usr/bin
 cp wastatus-video /data/data/com.termux/files/usr/bin
 cp wastatus-audio /data/data/com.termux/files/usr/bin
 cp aria2manager /data/data/com.termux/files/usr/bin
-
-cd ..
 
 # Set permission
 chmod +x /data/data/com.termux/files/usr/bin/header
