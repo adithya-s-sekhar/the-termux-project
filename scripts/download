@@ -9,7 +9,10 @@ file=
 
 clear
 header
-dl-header
+
+echo '-----------------------------------'
+echo '    aria2c Download Manager'
+echo '-----------------------------------'
 
 echo 'Enter URL: '
 read url

@@ -30,7 +30,6 @@ dos2unix wastatus-header
 dos2unix wastatus-video
 dos2unix wastatus-audio
 dos2unix download
-dos2unix dl-header
 
 # Copy custom scripts to /usr/bin
 cp header /data/data/com.termux/files/usr/bin
@@ -40,7 +39,6 @@ cp wastatus-header /data/data/com.termux/files/usr/bin
 cp wastatus-video /data/data/com.termux/files/usr/bin
 cp wastatus-audio /data/data/com.termux/files/usr/bin
 cp download /data/data/com.termux/files/usr/bin
-cp dl-header /data/data/com.termux/files/usr/bin
 
 cd ..
 
