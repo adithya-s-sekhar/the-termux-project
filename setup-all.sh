@@ -3,8 +3,6 @@
 # Initial Date: 09/May/2020
 # Current Date: 09/May/2020
 
-cd /sdcard/termux-config
-
 # Install packages
 sh setup-pkgs.sh
 
