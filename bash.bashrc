@@ -7,5 +7,6 @@ fi
 PS1='\$ '
 
 cd /sdcard
+alias yt=youtube-dl
 header
 index
