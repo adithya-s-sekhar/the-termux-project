@@ -2,7 +2,7 @@
 # Author: Adithya S Sekhar
 # Initial Date: 09/May/2020
 # Current Date: 09/May/2020
-# Download Manager
+# aria2 Manager
 
 url=
 file=
@@ -11,7 +11,7 @@ clear
 banner
 
 echo '-----------------------------------'
-echo '    aria2c Download Manager'
+echo '    aria2 Manager'
 echo '-----------------------------------'
 
 echo 'Enter URL: '
