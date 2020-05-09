@@ -17,8 +17,8 @@ wa_scalew=
 wa_scaleh=
 
 clear
-header
-wastatus-header
+banner
+wastatus-banner
 
 echo 'Video Status'
 echo '--------'

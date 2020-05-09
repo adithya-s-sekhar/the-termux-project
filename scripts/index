@@ -7,7 +7,7 @@
 i=4
 
 clear
-header
+banner
 
 echo '1. WaStatus'
 echo '2. aria2 Manager'

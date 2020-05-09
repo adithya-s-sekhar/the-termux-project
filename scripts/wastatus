@@ -7,8 +7,8 @@
 x=
 
 clear
-header
-wastatus-header
+banner
+wastatus-banner
 
 echo '1. Video status'
 echo '2. Audio status'
