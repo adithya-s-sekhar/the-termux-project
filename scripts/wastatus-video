@@ -20,7 +20,8 @@ clear
 header
 wastatus-header
 
-echo 'WaStatus> Video Status'
+echo 'Video Status'
+echo '--------'
 echo 'Input file: '
 read wa_in
 echo 'Start Offset: '

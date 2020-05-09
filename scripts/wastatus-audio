@@ -17,7 +17,8 @@ clear
 header
 wastatus-header
 
-echo 'WaStatus> Audio Status'
+echo 'Video Status'
+echo '--------'
 echo 'Input audio: '
 read wa_aud
 echo 'Background image: '
