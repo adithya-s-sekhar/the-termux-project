@@ -42,15 +42,14 @@ cp wastatus-audio /data/data/com.termux/files/usr/bin
 cp download /data/data/com.termux/files/usr/bin
 cp dl-header /data/data/com.termux/files/usr/bin
 
-# Set permission
-cd /data/data/com.termux/files/usr/bin
-chmod +x header
-chmod +x index
-chmod +x wastatus
-chmod +x wastatus-header
-chmod +x wastatus-video
-chmod +x wastatus-audio
-chmod +x download
-chmod +x dl-header
-
 cd ..
+
+# Set permission
+chmod +x /data/data/com.termux/files/usr/bin/header
+chmod +x /data/data/com.termux/files/usr/bin/index
+chmod +x /data/data/com.termux/files/usr/bin/wastatus
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-header
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-video
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio
+chmod +x /data/data/com.termux/files/usr/bin/download
+chmod +x /data/data/com.termux/files/usr/bin/dl-header
