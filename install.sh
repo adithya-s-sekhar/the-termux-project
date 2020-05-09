@@ -23,16 +23,16 @@ pip install youtube-dl
 cd scripts
 
 # dos2unix conversion for scripts
-dos2unix header
+dos2unix banner
 dos2unix index
 dos2unix wastatus
-dos2unix wastatus-header
+dos2unix wastatus-banner
 dos2unix wastatus-video
 dos2unix wastatus-audio
 dos2unix aria2manager
 
 # Copy custom scripts to /usr/bin
-cp header /data/data/com.termux/files/usr/bin
+cp banner /data/data/com.termux/files/usr/bin
 cp index /data/data/com.termux/files/usr/bin
 cp wastatus /data/data/com.termux/files/usr/bin
 cp wastatus-banner /data/data/com.termux/files/usr/bin
