@@ -10,11 +10,8 @@ apt upgrade -y
 # Load custom bash.bashrc
 cp bash.bashrc /data/data/com.termux/files/usr/etc
 
-# Install wget, ffmpeg, aria2 and python
-apt install wget -y
-apt install ffmpeg -y
-apt install python -y
-apt install aria2 -y
+# Install ffmpeg, aria2 and python
+apt install ffmpeg aria2 python
 
 # Upgrade pip and install youtube-dl
 pip install --upgrade pip
