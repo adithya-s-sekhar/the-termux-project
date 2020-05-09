@@ -11,8 +11,8 @@ Inside there's a Whatsapp status video maker and never failing download manager 
 1. Install termux from [Play Store](https://play.google.com/store/apps/details?id=com.termux)/[F-Droid](https://f-droid.org/en/packages/com.termux/)
 2. Grant storage permission to the app by typing `termux-setup-storage`
 3. Install git by `pkg install git`
-4. Clone this repo with `git clone https://github.com/adithya-s-sekhar/termuxforadithya`
-5. CD into repo directory with `cd termuxforadithya`
+4. Clone this repo with `git clone https://github.com/adithya-s-sekhar/my-first-repo`
+5. CD into repo directory with `cd my-first-repo`
 6. Type `sh install.sh` to begin installation
  After installation, restart termux.
  
@@ -26,5 +26,5 @@ Inside there's a Whatsapp status video maker and never failing download manager 
 ## Uninstallation
 
 1. Type these commands to call the built-in uninstaller
- 1. `cd /data/data/com.termux/files/home/termuxforadithya`
+ 1. `cd /data/data/com.termux/files/home/my-first-repo`
  2. `sh uninstall.sh`
