@@ -1,0 +1,22 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# Initial Date: 09/May/2020
+# Current Date: 09/May/2020
+# Download Manager
+
+url=
+file=
+
+clear
+header
+dl-header
+
+echo 'Enter URL: '
+read url
+echo 'Enter filename: '
+read file
+
+while [ 1 ]
+do
+	aria2c -c -j 3 -x 3 -s 3 -k 1M -o $file && break;
+done

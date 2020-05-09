@@ -1,0 +1,44 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# Initial Date: 09/May/2020
+# Current Date: 09/May/2020
+# WaStatus - Audio Module
+
+wa_aud=
+wa_img=
+wa_start=
+wa_end=
+wa_out=
+wa_scale=
+wa_scalew=
+wa_scaleh=
+
+clear
+header
+wastatus-header
+
+echo 'WaStatus> Audio Status'
+echo 'Input audio: '
+read wa_aud
+echo 'Background image: '
+read wa_img
+echo 'Start time: '
+read wa_start
+echo 'End time: '
+read wa_end
+echo 'Output filename: '
+read wa_out
+
+echo 'Scale video: '
+read wa_scale
+if [ $wa_scale = "n" ]
+then
+	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -c:a aac -b:a 64k -shortest $wa_out
+elif [ $wa_scale = "y" ]
+then
+	echo 'Scale Width: '
+	read wa_scalew
+	echo 'Scale Height: '
+	read wa_scaleh
+	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
+fi

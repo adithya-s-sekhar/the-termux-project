@@ -1,0 +1,65 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# Initial Date: 09/May/2020
+# Current Date: 09/May/2020
+# WaStatus - Video Module
+
+wa_in=
+wa_off=
+wa_start=
+wa_end=
+wa_out=
+wa_scale=
+wa_crop=
+wa_cropw=
+wa_croph=
+wa_scalew=
+wa_scaleh=
+
+clear
+header
+wastatus-header
+
+echo 'WaStatus> Video Status'
+echo 'Input file: '
+read wa_in
+echo 'Start Offset: '
+read wa_off
+echo 'Start time: '
+read wa_start
+echo 'End time: '
+read wa_end
+echo 'Output filename: '
+read wa_out
+
+echo 'Scale video: '
+read wa_scale
+if [ $wa_scale = "y" ]
+then
+	echo '18:9 Crop: '
+	read wa_crop
+	if [ $wa_crop = "y" ]
+	then
+		echo 'Crop Width: '
+		read wa_cropw
+		echo 'Crop Height: '
+		read wa_croph
+		echo 'Crop Y: '
+		read wa_cropy
+	fi
+	echo 'Scale Width: '
+	read wa_scalew
+	echo 'Scale Height: '
+	read wa_scaleh
+	echo working && :
+	if [ $wa_crop = "y" ]
+	then
+		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:0:$wa_cropy,scale=$wa_scalew:$wa_scaleh,transpose=1" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	elif [ $wa_crop = "n" ]
+	then
+		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "scale=$wa_scalew:$wa_scaleh" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	fi	
+elif [ $wa_scale = "n" ]
+then
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+fi

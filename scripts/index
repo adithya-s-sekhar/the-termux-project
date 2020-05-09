@@ -1,0 +1,26 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# Initial Date: 09/May/2020
+# Current Date: 09/May/2020
+# Index page
+
+i=4
+
+clear
+header
+
+echo '1. WaStatus'
+echo '2. aria2 Manager'
+echo '3. youtube-dl (soon)'
+echo '4. Exit this menu'
+
+read i
+if [ $i -eq 1 ]
+then
+	wastatus
+elif [ $i -eq 2 ]
+then
+	download
+else
+	clear
+fi
