@@ -1,7 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Author: Adithya S Sekhar
-# Initial Date: 09/May/2020
-# Current Date: 09/May/2020
 # WaStatus - Audio Module
 
 wa_aud=
@@ -17,7 +15,7 @@ clear
 banner
 wastatus-banner
 
-echo 'Video Status'
+echo 'Audio Status'
 echo '--------'
 echo 'Input audio: '
 read wa_aud
@@ -27,19 +25,19 @@ echo 'Start time: '
 read wa_start
 echo 'End time: '
 read wa_end
-echo 'Output filename: '
+echo 'Output filename (with ext): '
 read wa_out
 
-echo 'Scale video: '
+echo 'Resize video (y/n): '
 read wa_scale
 if [ $wa_scale = "n" ]
 then
 	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -c:a aac -b:a 64k -shortest $wa_out
 elif [ $wa_scale = "y" ]
 then
-	echo 'Scale Width: '
+	echo 'Resize Width: '
 	read wa_scalew
-	echo 'Scale Height: '
+	echo 'Resize Height: '
 	read wa_scaleh
 	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
 fi

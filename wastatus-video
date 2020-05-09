@@ -1,7 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Author: Adithya S Sekhar
-# Initial Date: 09/May/2020
-# Current Date: 09/May/2020
 # WaStatus - Video Module
 
 wa_in=
@@ -13,6 +11,8 @@ wa_scale=
 wa_crop=
 wa_cropw=
 wa_croph=
+wa_cropx=
+wa_cropy=
 wa_scalew=
 wa_scaleh=
 
@@ -22,7 +22,7 @@ wastatus-banner
 
 echo 'Video Status'
 echo '--------'
-echo 'Input file: '
+echo 'Input file (with ext): '
 read wa_in
 echo 'Start Offset: '
 read wa_off
@@ -30,31 +30,35 @@ echo 'Start time: '
 read wa_start
 echo 'End time: '
 read wa_end
-echo 'Output filename: '
+echo 'Output filename (with ext): '
 read wa_out
 
-echo 'Scale video: '
+echo 'Resize video (y/n): '
 read wa_scale
 if [ $wa_scale = "y" ]
 then
-	echo '18:9 Crop: '
+	echo 'Crop Video (y/n): '
 	read wa_crop
 	if [ $wa_crop = "y" ]
 	then
+		echo 'First provide your crop resolution'
 		echo 'Crop Width: '
 		read wa_cropw
 		echo 'Crop Height: '
 		read wa_croph
-		echo 'Crop Y: '
-		read wa_cropy
+		echo 'Crop X: '
+		read wa_cropx
+		echo 'Crop y: '
+		read 'wa_cropy'
 	fi
-	echo 'Scale Width: '
+	echo 'Now provide the resolution to which the cropped video is to be resized'
+	echo 'Resize Width: '
 	read wa_scalew
-	echo 'Scale Height: '
+	echo 'Resize Height: '
 	read wa_scaleh
 	if [ $wa_crop = "y" ]
 	then
-		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:0:$wa_cropy,scale=$wa_scalew:$wa_scaleh,transpose=1" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:$wa_cropx:$wa_cropy,scale=$wa_scalew:$wa_scaleh,transpose=1" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 	elif [ $wa_crop = "n" ]
 	then
 		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "scale=$wa_scalew:$wa_scaleh" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out

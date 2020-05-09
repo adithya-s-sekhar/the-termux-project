@@ -1,14 +1,11 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Author: Adithya S Sekhar
-# Initial Date: 09/May/2020
-# Current Date: 09/May/2020
 
 # Update repos and upgrade packages
 apt update
-apt upgrade -y
 
-# Load custom bash.bashrc
-cp bash.bashrc /data/data/com.termux/files/usr/etc
+# Copy newbash.bashrc
+cp newbash.bashrc /data/data/com.termux/files/usr/etc
 
 # Install ffmpeg, aria2 and python
 apt install ffmpeg aria2 python -y
@@ -43,3 +40,12 @@ chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-video
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio
 chmod +x /data/data/com.termux/files/usr/bin/aria2manager
+
+# Backup bash.bashrc and replace newbash
+cd /data/data/com.termux/files/usr/etc
+mv bash.bashrc bash.bashrc.bak
+mv newbash.bashrc bash.bashrc
+
+clear
+
+echo 'Scripts are installed. Restart termux now'

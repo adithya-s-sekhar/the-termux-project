@@ -22,3 +22,9 @@ Inside there's a Whatsapp status video maker and never failing download manager 
 2. ffmpeg
 3. aria2
 4. youtube-dl (for a future feature soon)
+
+## Uninstallation
+
+1. Type these commands to call the built-in uninstaller
+ 1. `cd /data/data/com.termux/files/home/termuxforadithya`
+ 2. `sh uninstall.sh`
