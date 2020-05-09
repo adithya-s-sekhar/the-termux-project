@@ -36,7 +36,7 @@ cp wastatus-audio /data/data/com.termux/files/usr/bin
 cp aria2manager /data/data/com.termux/files/usr/bin
 
 # Set permission
-chmod +x /data/data/com.termux/files/usr/bin/header
+chmod +x /data/data/com.termux/files/usr/bin/banner
 chmod +x /data/data/com.termux/files/usr/bin/index
 chmod +x /data/data/com.termux/files/usr/bin/wastatus
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner
