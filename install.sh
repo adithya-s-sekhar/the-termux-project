@@ -35,7 +35,7 @@ dos2unix aria2manager
 cp header /data/data/com.termux/files/usr/bin
 cp index /data/data/com.termux/files/usr/bin
 cp wastatus /data/data/com.termux/files/usr/bin
-cp wastatus-header /data/data/com.termux/files/usr/bin
+cp wastatus-banner /data/data/com.termux/files/usr/bin
 cp wastatus-video /data/data/com.termux/files/usr/bin
 cp wastatus-audio /data/data/com.termux/files/usr/bin
 cp aria2manager /data/data/com.termux/files/usr/bin
@@ -46,7 +46,7 @@ cd ..
 chmod +x /data/data/com.termux/files/usr/bin/header
 chmod +x /data/data/com.termux/files/usr/bin/index
 chmod +x /data/data/com.termux/files/usr/bin/wastatus
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-header
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-video
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio
 chmod +x /data/data/com.termux/files/usr/bin/aria2manager
