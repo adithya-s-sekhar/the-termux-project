@@ -42,6 +42,4 @@ cd /data/data/com.termux/files/usr/etc
 mv bash.bashrc bash.bashrc.bak
 mv newbash.bashrc bash.bashrc
 
-clear
-
 echo 'Scripts are installed. Restart termux now'
