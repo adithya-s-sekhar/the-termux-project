@@ -1,14 +1,16 @@
-My first repo, using this to learn git.
+# My first repo, using this to learn git.
 
-# This isn't meant to be used by anyone, these are some hacky scripts just to learn git. I take no responsibilities.
+>This isn't meant to be used by anyone, these are some hacky scripts for termux. I've put these here so I have something to test git commands on.
+
 Feel free to judge and criticize, I'm learning after all.
 
-This is the setup script for configuring termux and some scripts made for some odd very specific situations. 
-Inside there's a Whatsapp status video maker and never failing download manager for aria2c.
+This is the setup script for configuring termux and installing some scripts I made for my specific usage.
+
+Inside there's a WhatsApp status video maker and a never failing download manager for aria2c in a loop.
 
 ## Installation
 
-1. Install termux from [Play Store](https://play.google.com/store/apps/details?id=com.termux)/[F-Droid](https://f-droid.org/en/packages/com.termux/)
+1. Install termux from [Play Store](https://play.google.com/store/apps/details?id=com.termux) or [F-Droid](https://f-droid.org/en/packages/com.termux/)
 2. Grant storage permission to the app by typing `termux-setup-storage`
 3. Install git by `pkg install git`
 4. Clone this repo with `git clone https://github.com/adithya-s-sekhar/my-first-repo`
@@ -18,13 +20,11 @@ Inside there's a Whatsapp status video maker and never failing download manager 
  
 ## Dependancies (installed automatically)
 
-1. python3
-2. ffmpeg
-3. aria2
-4. youtube-dl (for a future feature soon)
+1. ffmpeg
+2. aria2
 
 ## Uninstallation
 
-1. Type these commands to call the built-in uninstaller
+* Type these commands to call the built-in uninstaller
  1. `cd /data/data/com.termux/files/home/my-first-repo`
  2. `sh uninstall.sh`
