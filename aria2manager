@@ -8,9 +8,10 @@ file=
 clear
 banner
 
-echo '-----------------------------------'
-echo '    aria2 Manager'
-echo '-----------------------------------'
+echo '-------------------------------------------'
+echo '               aria2 Manager'
+echo ' Downloads are in Internal Storage/Download'
+echo '-------------------------------------------'
 
 echo 'Enter URL: '
 read url
