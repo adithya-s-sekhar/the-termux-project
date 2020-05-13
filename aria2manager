@@ -20,5 +20,5 @@ read file
 
 while [ 1 ]
 do
-	aria2c -d Download -c -x 4 -k 4M -o "$file" "$url" && break;
+	aria2c -d Download -c -x 4 -k 4M --file-allocation=none -o "$file" "$url" && break;
 done
