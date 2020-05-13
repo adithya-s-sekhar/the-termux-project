@@ -2,7 +2,7 @@
 # Author: Adithya S Sekhar
 # Remote install script
 
-mkdir my-first-repo
+mkdir my-first-repo >/dev/null 2>&1
 cd my-first-repo
 echo 'Getting files'
 curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/aria2manager' -o aria2manager >/dev/null 2>&1
