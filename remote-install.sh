@@ -4,14 +4,18 @@
 
 mkdir my-first-repo
 cd my-first-repo
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/aria2manager' -o aria2manager
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/banner' -o banner
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/index' -o index
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/install.sh' -o install.sh
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/newbash.bashrc' -o newbash.bashrc
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/uninstall.sh' -o uninstall.sh
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus' -o wastatus
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-audio' -o wastatus-audio
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-video' -o wastatus-video
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-banner' -o wastatus-banner
+echo 'Getting files'
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/aria2manager' -o aria2manager >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/banner' -o banner >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/index' -o index >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/install.sh' -o install.sh >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/newbash.bashrc' -o newbash.bashrc >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/uninstall.sh' -o uninstall.sh >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus' -o wastatus >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-audio' -o wastatus-audio >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-video' -o wastatus-video >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-banner' -o wastatus-banner >/dev/null 2>&1
+echo ''
+echo 'Starting install.sh'
+echo ''
 sh install.sh
