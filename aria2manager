@@ -8,15 +8,20 @@ file=
 clear
 banner
 
+echo ''
 echo '-------------------------------------------'
 echo '               aria2 Manager'
+echo ''
 echo ' Downloads are in Internal Storage/Download'
 echo '-------------------------------------------'
 
+echo ''
 echo 'Enter URL: '
 read url
+echo ''
 echo 'Enter filename: '
 read file
+echo ''
 
 while [ 1 ]
 do

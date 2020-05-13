@@ -16,20 +16,27 @@ banner
 wastatus-banner
 
 echo 'Audio Status'
-echo '--------'
+echo '------------'
+echo ''
 echo 'Input audio: '
 read wa_aud
+echo ''
 echo 'Background image: '
 read wa_img
+echo ''
 echo 'Start time: '
 read wa_start
+echo ''
 echo 'End time: '
 read wa_end
+echo ''
 echo 'Output filename (with ext): '
 read wa_out
+echo ''
 
 echo 'Resize video (y/n): '
 read wa_scale
+echo ''
 if [ $wa_scale = "n" ]
 then
 	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -c:a aac -b:a 64k -shortest $wa_out
@@ -37,7 +44,9 @@ elif [ $wa_scale = "y" ]
 then
 	echo 'Resize Width: '
 	read wa_scalew
+	echo ''
 	echo 'Resize Height: '
 	read wa_scaleh
+	echo ''
 	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
 fi

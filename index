@@ -7,10 +7,15 @@ i=4
 clear
 banner
 
+echo ''
 echo '1. WaStatus'
+echo ''
 echo '2. aria2 Manager'
+echo ''
 echo '3. youtube-dl (soon)'
+echo ''
 echo 'Press ENTER to skip this menu'
+echo ''
 
 read i
 if [ $i -eq 1 ]

@@ -2,6 +2,7 @@
 # Author: Adithya S Sekhar
 # WaStatus - Banner
 
+echo ''
 echo '-----------------------------------'
 echo '    WhatsApp Status Creater Tool'
 echo '-----------------------------------'

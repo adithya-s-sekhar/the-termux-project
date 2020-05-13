@@ -21,41 +21,58 @@ banner
 wastatus-banner
 
 echo 'Video Status'
-echo '--------'
+echo '------------'
+echo ''
 echo 'Input file (with ext): '
 read wa_in
+echo ''
 echo 'Start Offset: '
 read wa_off
+echo ''
 echo 'Start time: '
 read wa_start
+echo ''
 echo 'End time: '
 read wa_end
+echo ''
 echo 'Output filename (with ext): '
 read wa_out
+echo ''
 
 echo 'Resize video (y/n): '
 read wa_scale
+echo ''
 if [ $wa_scale = "y" ]
 then
 	echo 'Crop Video (y/n): '
 	read wa_crop
+	echo ''
 	if [ $wa_crop = "y" ]
 	then
+	echo ''
 		echo 'First provide your crop resolution'
 		echo 'Crop Width: '
 		read wa_cropw
+		echo ''
 		echo 'Crop Height: '
 		read wa_croph
+		echo ''
 		echo 'Crop X: '
 		read wa_cropx
+		echo ''
 		echo 'Crop y: '
 		read 'wa_cropy'
+		echo ''
 	fi
+	echo ''
 	echo 'Now provide the resolution to which the cropped video is to be resized'
+	echo ''
 	echo 'Resize Width: '
 	read wa_scalew
+	echo ''
 	echo 'Resize Height: '
 	read wa_scaleh
+	echo ''
 	if [ $wa_crop = "y" ]
 	then
 		ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:$wa_cropx:$wa_cropy,scale=$wa_scalew:$wa_scaleh,transpose=1" -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out

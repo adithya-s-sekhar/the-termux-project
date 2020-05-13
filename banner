@@ -3,7 +3,11 @@
 # Banner
 
 echo '************************************************'
+echo ''
 echo '                 The Termux Project'
+echo ''
 echo '            - adithyassekhar 13/May/2020'
+echo ''
 echo '************************************************'
+echo ''
 echo "Current directory is `pwd`"

@@ -8,8 +8,11 @@ clear
 banner
 wastatus-banner
 
+echo ''
 echo '1. Video status'
+echo ''
 echo '2. Audio status'
+echo ''
 
 read x
 
