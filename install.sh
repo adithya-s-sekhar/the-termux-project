@@ -6,7 +6,7 @@ cp newbash.bashrc /data/data/com.termux/files/usr/etc
 
 # Install ffmpeg, aria2 and python
 echo 'Installing dependencies'
-apt install ffmpeg aria2 -y >/dev/null 2>&1
+pkg install ffmpeg aria2 -y >/dev/null 2>&1
 
 # dos2unix conversion for scripts
 dos2unix banner >/dev/null 2>&1
