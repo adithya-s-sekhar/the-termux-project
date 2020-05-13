@@ -4,6 +4,6 @@
 
 echo '************************************************'
 echo '                 The Termux Project'
-echo '            - adithyassekhar 09/May/2020'
+echo '            - adithyassekhar 13/May/2020'
 echo '************************************************'
 echo "Current directory is `pwd`"
