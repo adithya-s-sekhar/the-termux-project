@@ -4,7 +4,7 @@
 # Copy newbash.bashrc
 cp newbash.bashrc /data/data/com.termux/files/usr/etc
 
-# Install ffmpeg, aria2 and python
+# Install ffmpeg, aria2, python, atomicparsley and youtube-dl
 echo 'Installing dependencies'
 pkg install ffmpeg aria2 python atomicparsley -y >/dev/null 2>&1
 pip install youtube-dl >/dev/null 2>&1

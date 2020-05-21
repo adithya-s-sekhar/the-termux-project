@@ -9,7 +9,7 @@ mv bash.bashrc.bak bash.bashrc
 
 echo ''
 
-# Uninstall ffmpeg, aria2
+# Uninstall ffmpeg, aria2, python and atomicparsley
 echo 'Removing dependencies'
 apt remove ffmpeg aria2 python atomicparsley -y >/dev/null 2>&1
 apt autoremove -y >/dev/null 2>&1
