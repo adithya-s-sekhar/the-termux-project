@@ -19,6 +19,9 @@ Inside there's a WhatsApp status video maker and a never failing download manage
 
 1. ffmpeg
 2. aria2
+3. python
+4. atomicparsley
+5. youtube-dl
 
 ## Uninstallation
 
