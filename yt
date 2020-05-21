@@ -1,0 +1,49 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# youtube-dl
+
+url=
+fcode=
+conf=
+
+clear
+banner
+
+echo ''
+echo '-------------------------------------------'
+echo '          [beta] youtube-dl'
+echo ''
+echo ' beta: This is going to change soon'
+echo '-------------------------------------------'
+
+echo ''
+echo 'Enter URL: '
+read url
+
+echo ''
+echo 'Format list: '
+echo '1. MP4 360p\n2. MP4 480p\n3. MP4 720p\n4. MP4 1080p\n5. M4A 128k'
+echo ''
+read fcode
+
+echo ''
+if [ $fcode -eq 1 ]
+then
+conf='-f bestvideo[ext=mp4][height<=360]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 2 ]
+then
+conf='-f bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 3 ]
+then
+conf='-f bestvideo[ext=mp4][height<=720]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 4 ]
+then
+conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 5 ]
+then
+conf='--embed-thumbnail -f bestaudio[ext=m4a]'
+else
+yt
+fi
+
+youtube-dl --ignore-errors --add-metadata --no-cache-dir $conf -o "%(title)s.%(ext)s" "$url"
