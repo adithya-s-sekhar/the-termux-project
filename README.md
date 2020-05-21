@@ -6,7 +6,7 @@ Feel free to judge and criticize, I'm learning after all.
 
 This is the setup script for configuring termux and installing some scripts I made for my specific usage.
 
-Inside there's a WhatsApp status video maker and a never failing download manager for aria2c in a loop.
+Inside there's a WhatsApp status video maker, a never failing download manager for aria2c in a loop, and a simple client for youtube-dl.
 
 ## Installation
 
