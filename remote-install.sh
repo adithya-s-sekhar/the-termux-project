@@ -15,6 +15,7 @@ curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wa
 curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-audio' -o wastatus-audio >/dev/null 2>&1
 curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-video' -o wastatus-video >/dev/null 2>&1
 curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-banner' -o wastatus-banner >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/yt' -o yt >/dev/null 2>&1
 echo ''
 echo 'Starting install.sh'
 echo ''

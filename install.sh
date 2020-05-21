@@ -6,7 +6,8 @@ cp newbash.bashrc /data/data/com.termux/files/usr/etc
 
 # Install ffmpeg, aria2 and python
 echo 'Installing dependencies'
-pkg install ffmpeg aria2 -y >/dev/null 2>&1
+pkg install ffmpeg aria2 python atomicparsley -y >/dev/null 2>&1
+pip install youtube-dl >/dev/null 2>&1
 
 # dos2unix conversion for scripts
 dos2unix banner >/dev/null 2>&1
@@ -16,6 +17,7 @@ dos2unix wastatus-banner >/dev/null 2>&1
 dos2unix wastatus-video >/dev/null 2>&1
 dos2unix wastatus-audio >/dev/null 2>&1
 dos2unix aria2manager >/dev/null 2>&1
+dos2unix yt >/dev/null 2>&1
 
 echo ''
 
@@ -28,6 +30,7 @@ cp wastatus-banner /data/data/com.termux/files/usr/bin
 cp wastatus-video /data/data/com.termux/files/usr/bin
 cp wastatus-audio /data/data/com.termux/files/usr/bin
 cp aria2manager /data/data/com.termux/files/usr/bin
+cp yt /data/data/com.termux/files/usr/bin
 
 echo ''
 
@@ -40,6 +43,7 @@ chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-video
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio
 chmod +x /data/data/com.termux/files/usr/bin/aria2manager
+chmod +x /data/data/com.termux/files/usr/bin/yt
 
 echo ''
 

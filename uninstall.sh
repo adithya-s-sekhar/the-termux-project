@@ -11,7 +11,7 @@ echo ''
 
 # Uninstall ffmpeg, aria2
 echo 'Removing dependencies'
-apt remove ffmpeg aria2 -y >/dev/null 2>&1
+apt remove ffmpeg aria2 python atomicparsley -y >/dev/null 2>&1
 apt autoremove -y >/dev/null 2>&1
 
 echo ''
@@ -25,6 +25,7 @@ rm /data/data/com.termux/files/usr/bin/wastatus-banner
 rm /data/data/com.termux/files/usr/bin/wastatus-video
 rm /data/data/com.termux/files/usr/bin/wastatus-audio
 rm /data/data/com.termux/files/usr/bin/aria2manager
+rm /data/data/com.termux/files/usr/bin/yt
 
 echo ''
 
