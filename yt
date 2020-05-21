@@ -22,7 +22,7 @@ read url
 
 echo ''
 echo 'Format list: '
-echo '1. MP4 360p\n2. MP4 480p\n3. MP4 720p\n4. MP4 1080p\n5. M4A 128k'
+echo -e '1. MP4 360p\n2. MP4 480p\n3. MP4 720p\n4. MP4 1080p\n5. M4A 128k'
 echo ''
 read fcode
 
