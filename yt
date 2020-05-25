@@ -10,11 +10,9 @@ clear
 banner
 
 echo ''
-echo '-------------------------------------------'
-echo '          [beta] youtube-dl'
-echo ''
-echo ' beta: This is going to change soon'
-echo '-------------------------------------------'
+echo '----------------------------'
+echo '        youtube-dl'
+echo '----------------------------'
 
 echo ''
 echo 'Enter URL: '
