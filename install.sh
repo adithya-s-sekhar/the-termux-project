@@ -58,4 +58,5 @@ mv newbash.bashrc bash.bashrc
 echo ''
 echo 'Scripts are installed.'
 
+cd /sdcard
 index
