@@ -32,7 +32,7 @@ then
 elif [ $i -eq 4 ]
 then
 cd ~
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/remote-install.sh' -o remote-install.sh
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/testing/remote-install.sh' -o remote-install.sh
 sh remote-install.sh
 else
 	clear
