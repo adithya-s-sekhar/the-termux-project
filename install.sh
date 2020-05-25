@@ -56,5 +56,6 @@ mv bash.bashrc bash.bashrc.bak
 mv newbash.bashrc bash.bashrc
 
 echo ''
+echo 'Scripts are installed.'
 
-echo 'Scripts are installed. Restart termux now'
+index
