@@ -31,6 +31,11 @@ then
 	yt
 elif [ $i -eq 4 ]
 then
+echo 'removing custom bashrc'
+cd /data/data/com.termux/files/usr/etc >/dev/null 2>&1
+rm bash.bashrc >/dev/null 2>&1
+echo 'restoring old bashrc'
+mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
 cd ~
 curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/testing/remote-install.sh' -o remote-install.sh
 sh remote-install.sh
