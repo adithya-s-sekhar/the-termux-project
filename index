@@ -38,7 +38,7 @@ cd /data/data/com.termux/files/usr/etc >/dev/null 2>&1
 rm bash.bashrc >/dev/null 2>&1
 mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
 cd ~
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/testing/remote-install.sh' -o remote-install.sh >/dev/null 2>&1
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/remote-install.sh' -o remote-install.sh >/dev/null 2>&1
 sh remote-install.sh && break
 else
 	clear
