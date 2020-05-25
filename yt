@@ -22,7 +22,7 @@ read url
 
 echo ''
 echo 'Format list: '
-echo -e '1. MP4 360p\n2. MP4 480p\n3. MP4 720p\n4. MP4 1080p\n5. M4A 128k'
+echo -e '1. MP4 360p\n2. MP4 480p\n3. MP4 720p\n4. MP4 1080p\n5. M4A 128k\n6. best\n7. worst'
 echo ''
 read fcode
 
@@ -42,6 +42,12 @@ conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 5 ]
 then
 conf='--embed-thumbnail -f bestaudio[ext=m4a]'
+elif [ $fcode -eq 6 ]
+then
+conf='-f best'
+elif [ $fcode -eq 7 ]
+then
+conf='-f worst'
 else
 yt
 fi
