@@ -14,6 +14,8 @@ echo '2. aria2 Manager'
 echo ''
 echo '3. [beta] youtube-dl'
 echo ''
+echo '4. Update'
+echo ''
 echo 'Press ENTER to skip this menu'
 echo ''
 
@@ -27,6 +29,11 @@ then
 elif [ $i -eq 3 ]
 then
 	yt
+elif [ $i -eq 4 ]
+then
+cd ~
+curl 'https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/remote-install.sh' -o remote-install.sh
+sh remote-install.sh
 else
 	clear
 fi
