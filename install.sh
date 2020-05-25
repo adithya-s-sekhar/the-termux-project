@@ -37,25 +37,25 @@ dos2unix yt >/dev/null 2>&1
 echo '- copying scripts'
 
 # Copy custom scripts to /usr/bin
-cp banner /data/data/com.termux/files/usr/bin
-cp index /data/data/com.termux/files/usr/bin
-cp wastatus /data/data/com.termux/files/usr/bin
-cp wastatus-banner /data/data/com.termux/files/usr/bin
-cp wastatus-video /data/data/com.termux/files/usr/bin
-cp wastatus-audio /data/data/com.termux/files/usr/bin
-cp aria2manager /data/data/com.termux/files/usr/bin
-cp yt /data/data/com.termux/files/usr/bin
+cp banner /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp index /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp wastatus /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp wastatus-banner /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp wastatus-video /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp wastatus-audio /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp aria2manager /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp yt /data/data/com.termux/files/usr/bin >/dev/null 2>&1
 
 # Set permission
 echo '- setting permissions'
-chmod +x /data/data/com.termux/files/usr/bin/banner
-chmod +x /data/data/com.termux/files/usr/bin/index
-chmod +x /data/data/com.termux/files/usr/bin/wastatus
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-video
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio
-chmod +x /data/data/com.termux/files/usr/bin/aria2manager
-chmod +x /data/data/com.termux/files/usr/bin/yt
+chmod +x /data/data/com.termux/files/usr/bin/banner >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/index >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/wastatus >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-video >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/aria2manager >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/usr/bin/yt >/dev/null 2>&1
 
 echo ''
 
@@ -64,11 +64,11 @@ echo '3/3 .bashrc'
 # Backup bash.bashrc and replace newbash
 echo '- backing up current bashrc'
 # Copy newbash.bashrc
-cp newbash.bashrc /data/data/com.termux/files/usr/etc
+cp newbash.bashrc /data/data/com.termux/files/usr/etc >/dev/null 2>&1
 echo '- installing custom bashrc'
-cd /data/data/com.termux/files/usr/etc
-mv bash.bashrc bash.bashrc.bak
-mv newbash.bashrc bash.bashrc
+cd /data/data/com.termux/files/usr/etc >/dev/null 2>&1
+mv bash.bashrc bash.bashrc.bak >/dev/null 2>&1
+mv newbash.bashrc bash.bashrc >/dev/null 2>&1
 
 echo ''
 echo 'Scripts are installed, restart termux now.'
