@@ -1,0 +1,11 @@
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/aria2manager
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/banner
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/index
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/install.sh
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/newbash.bashrc
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/uninstall.sh
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-audio
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-video
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/wastatus-banner
+https://raw.githubusercontent.com/adithya-s-sekhar/my-first-repo/master/yt
