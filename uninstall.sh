@@ -4,7 +4,7 @@
 echo '---------------------'
 echo 'Uninstalling The Termux Project'
 echo ''
-echo 'https://www.github.com/adithya-s-sekhar/my-first-repo'
+echo 'https://www.github.com/adithya-s-sekhar/the-termux-project'
 echo '---------------------'
 echo ''
 

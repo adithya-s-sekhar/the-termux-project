@@ -4,7 +4,7 @@
 echo '---------------------'
 echo 'Beginning The Termux Project installation'
 echo ''
-echo 'https://www.github.com/adithya-s-sekhar/my-first-repo'
+echo 'https://www.github.com/adithya-s-sekhar/the-termux-project'
 echo '---------------------'
 echo ''
 # Install ffmpeg, aria2, python, atomicparsley and youtube-dl
