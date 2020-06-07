@@ -36,8 +36,8 @@ echo ''
 echo 'Max datarate (KBps): '
 read wa_maxdata
 wa_maxdata=$((wa_maxdata*8-64))
-wa_maxdata="$wa_maxdata$k"
 wa_bufsize=$((wa_maxdata*2))
+wa_maxdata="$wa_maxdata$k"
 wa_bufsize="$wa_bufsize$k"
 echo ''
 echo 'Output filename (with ext): '
