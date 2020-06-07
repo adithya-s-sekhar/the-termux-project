@@ -15,6 +15,7 @@ wa_croph=
 wa_scalew=
 wa_scaleh=
 wa_maxdata=
+wa_bufsize=
 
 clear
 banner
@@ -38,6 +39,7 @@ echo ''
 echo 'Max datarate (KBps): '
 read wa_maxdata
 wa_maxdata=$((wa_maxdata*8-64))
+wa_bufsize=$((wa_maxdata*2))
 echo ''
 echo 'Output filename (with ext): '
 read wa_out
@@ -74,7 +76,7 @@ then
 	echo 'Resize Height: '
 	read wa_scaleh
 	echo ''
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,scale=$wa_scalew:$wa_scaleh,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,scale=$wa_scalew:$wa_scaleh,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #1-0-1
@@ -88,7 +90,7 @@ then
 	echo 'Crop Height: '
 	read wa_croph
 	echo ''
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #1-1-0
@@ -109,7 +111,7 @@ then
 	echo 'Resize Height: '
 	read wa_scaleh
 	echo ''
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,scale=$wa_scalew:$wa_scaleh" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,scale=$wa_scalew:$wa_scaleh" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #1-0-0
@@ -123,7 +125,7 @@ then
 	echo 'Crop Height: '
 	read wa_croph
 	echo ''
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #0-1-1
@@ -137,7 +139,7 @@ then
 	echo 'Resize Height: '
 	read wa_scaleh
 	echo ''
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "scale=$wa_scalew:$wa_scaleh,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "scale=$wa_scalew:$wa_scaleh,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #0-1-0
@@ -151,19 +153,19 @@ then
 	echo 'Resize Height: '
 	read wa_scaleh
 	echo ''
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "scale=$wa_scalew:$wa_scaleh" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "scale=$wa_scalew:$wa_scaleh" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #0-0-1
 
 if [ $wa_crop = "n" ] && [ $wa_scale = "n" ] && [ $wa_tran = "y" ]
 then
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
 #0-0-0
 
 if [ $wa_crop = "n" ] && [ $wa_scale = "n" ] && [ $wa_tran = "n" ]
 then
-	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
+	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
