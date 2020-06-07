@@ -7,4 +7,5 @@ fi
 PS1='\$ '
 
 cd /sdcard
+clear
 index
