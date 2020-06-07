@@ -8,6 +8,7 @@ echo '                 The Termux Project'
 echo ''
 echo '            - adithyassekhar 07/June/2020'
 echo ''
+echo "      type 'index' any time to call this menu"
 echo '************************************************'
 echo ''
 echo "Current directory is `pwd`"
