@@ -10,9 +10,13 @@ wa_out=
 wa_scale=
 wa_scalew=
 wa_scaleh=
-wa_maxdata=
+wa_maxdata=243
 wa_bufsize=
 k=k
+wa_maxdata=$((wa_maxdata*8-64))
+wa_bufsize=$wa_maxdata
+wa_maxdata="$wa_maxdata$k"
+wa_bufsize="$wa_bufsize$k"
 
 clear
 banner
@@ -32,13 +36,6 @@ read wa_start
 echo ''
 echo 'End time: '
 read wa_end
-echo ''
-echo 'Max datarate (KBps): '
-read wa_maxdata
-wa_maxdata=$((wa_maxdata*8-64))
-wa_bufsize=$wa_maxdata
-wa_maxdata="$wa_maxdata$k"
-wa_bufsize="$wa_bufsize$k"
 echo ''
 echo 'Output filename (with ext): '
 read wa_out
