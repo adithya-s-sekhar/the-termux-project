@@ -11,8 +11,6 @@ wa_scale=
 wa_scalew=
 wa_scaleh=
 wa_maxdata=
-wa_maxrate=
-wa_bufsize=
 
 clear
 banner
@@ -36,8 +34,8 @@ echo ''
 echo 'Max datarate (KBps): '
 read wa_maxdata
 wa_maxdata=$((wa_maxdata*8-64))
-wa_maxrate=$wa_maxdata
-wa_bufsize=$wa_maxdata
+wa_maxdata=$wa_maxdata
+wa_maxdata=$wa_maxdata
 echo ''
 echo 'Output filename (with ext): '
 read wa_out
@@ -51,10 +49,10 @@ then
 if [ $wa_img = "cover" ]
 then
 ffmpeg -i $wa_aud -an tmp.jpg
-ffmpeg -loop 1 -i tmp.jpg -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxrate -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
+ffmpeg -loop 1 -i tmp.jpg -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
 rm tmp.jpg
 else
-	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxrate -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
+	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
 fi
 elif [ $wa_scale = "y" ]
 then
@@ -67,9 +65,9 @@ then
 	if [ $wa_img = "cover" ]
 then
 ffmpeg -i $wa_aud -an tmp.jpg
-ffmpeg -loop 1 -i tmp.jpg -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxrate -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
+ffmpeg -loop 1 -i tmp.jpg -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
 rm tmp.jpg
 else
-	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxrate -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
+	ffmpeg -loop 1 -i $wa_img -i $wa_aud -ss $wa_start -to $wa_end -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_maxdata -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
 fi
 fi
