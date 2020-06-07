@@ -92,12 +92,6 @@ then
 	echo 'Crop Height: '
 	read wa_croph
 	echo ''
-	echo 'Crop X: '
-	read wa_cropx
-	echo ''
-	echo 'Crop y: '
-	read 'wa_cropy'
-	echo ''
 	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y,transpose=1" -preset faster -crf 18 -maxrate:v $wa_maxrate -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
 
@@ -111,12 +105,6 @@ then
 	echo ''
 	echo 'Crop Height: '
 	read wa_croph
-	echo ''
-	echo 'Crop X: '
-	read wa_cropx
-	echo ''
-	echo 'Crop y: '
-	read 'wa_cropy'
 	echo ''
 	echo 'Resizing cropped video'
 	echo 'Resize Width: '
@@ -138,12 +126,6 @@ then
 	echo ''
 	echo 'Crop Height: '
 	read wa_croph
-	echo ''
-	echo 'Crop X: '
-	read wa_cropx
-	echo ''
-	echo 'Crop y: '
-	read 'wa_cropy'
 	echo ''
 	ffmpeg -ss $wa_off -i $wa_in -ss $wa_start -to $wa_end -vf "crop=$wa_cropw:$wa_croph:x:y" -preset faster -crf 18 -maxrate:v $wa_maxrate -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k $wa_out
 fi
