@@ -14,12 +14,15 @@ Some scripts for termux with inbuilt updater.
 
 - [Play Store](https://play.google.com/store/apps/details?id=com.termux) or
 - [F-Droid](https://f-droid.org/en/packages/com.termux/)
+
 2. Grant storage permission to the app by typing
 
 `termux-setup-storage`
+
 3. Download the remote install script with
 
 `curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/remote-install.sh' -o remote-install.sh`
+
 4. Run the remote install script by
 
 `sh remote-install.sh`
