@@ -10,7 +10,7 @@ banner
 
 echo ''
 echo '-------------------------------------------'
-echo '               aria2 Manager'
+echo '                aria2 Manager'
 echo ''
 echo ' Downloads are in Internal Storage/Download'
 echo '-------------------------------------------'
