@@ -4,9 +4,10 @@
 
 mkdir the-termux-project >/dev/null 2>&1
 cd the-termux-project
+rm -r *
 echo 'Getting files'
-curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/files_list.txt' -o files_list.txt >/dev/null 2>&1
-xargs -n 1 curl -O < files_list.txt >/dev/null 2>&1
+curl 'https://codeload.github.com/adithya-s-sekhar/the-termux-project/legacy.tar.gz/master ' --output ttp.gz >/dev/null 2>&1
+tar -xf ttp.gz --overwrite --split-components 1
 echo ''
 echo 'Starting install.sh'
 echo ''
