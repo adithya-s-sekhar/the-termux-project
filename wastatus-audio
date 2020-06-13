@@ -10,13 +10,8 @@ wa_out=
 wa_scale=
 wa_scalew=
 wa_scaleh=
-wa_maxdata=243
-wa_bufsize=
-k=k
-wa_maxdata=$((wa_maxdata*8-64))
-wa_bufsize=$wa_maxdata
-wa_maxdata="$wa_maxdata$k"
-wa_bufsize="$wa_bufsize$k"
+wa_maxdata=1880k
+wa_bufsize=250k
 
 clear
 banner
