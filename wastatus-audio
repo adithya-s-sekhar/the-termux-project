@@ -10,7 +10,7 @@ wa_out=
 wa_scale=
 wa_scalew=
 wa_scaleh=
-wa_maxdata=1880k
+wa_maxdata=1692k
 wa_bufsize=250k
 
 clear
