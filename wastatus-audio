@@ -11,7 +11,7 @@ wa_scale=
 wa_scalew=
 wa_scaleh=
 wa_maxdata=1692k
-wa_bufsize=250k
+wa_bufsize=1692k
 
 clear
 banner
