@@ -45,12 +45,12 @@ if [ $wa_img = "cover" ]
 then
 ffmpeg -i $wa_aud -an tmp.jpg
 ffmpeg -i $wa_aud -c copy -ss $wa_start -to $wa_end tmp.m4a
-	ffmpeg -loop 1 -i tmp.jpg -i tmp.m4a -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
+	ffmpeg -loop 1 -i tmp.jpg -i tmp.m4a -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
 	rm tmp.m4a
 rm tmp.jpg
 else
 ffmpeg -i $wa_aud -c copy -ss $wa_start -to $wa_end tmp.m4a
-	ffmpeg -loop 1 -i $wa_img -i tmp.m4a -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
+	ffmpeg -loop 1 -i $wa_img -i tmp.m4a -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest $wa_out
 	rm tmp.m4a
 fi
 elif [ $wa_scale = "y" ]
@@ -65,12 +65,12 @@ then
 then
 ffmpeg -i $wa_aud -an tmp.jpg
 ffmpeg -i $wa_aud -c copy -ss $wa_start -to $wa_end tmp.m4a
-	ffmpeg -loop 1 -i tmp.jpg -i tmp.m4a -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
+	ffmpeg -loop 1 -i tmp.jpg -i tmp.m4a -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
 rm tmp.jpg
 rm tmp.m4a
 else
 ffmpeg -i $wa_aud -c copy -ss $wa_start -to $wa_end tmp.m4a
-	ffmpeg -loop 1 -i $wa_img -i tmp.m4a -c:v libx264 -preset faster -crf 18 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
+	ffmpeg -loop 1 -i $wa_img -i tmp.m4a -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest $wa_out
 	rm tmp.m4a
 fi
 fi
