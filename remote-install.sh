@@ -4,7 +4,7 @@
 
 mkdir the-termux-project >/dev/null 2>&1
 cd the-termux-project
-rm -r *
+rm -r * >/dev/null 2>&1
 echo 'Getting files'
 curl 'https://codeload.github.com/adithya-s-sekhar/the-termux-project/legacy.tar.gz/master ' --output ttp.gz >/dev/null 2>&1
 tar -xf ttp.gz --overwrite --strip-components 1
