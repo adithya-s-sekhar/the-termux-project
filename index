@@ -50,7 +50,6 @@ cd ~ >/dev/null 2>&1
 cd the-termux-project
 sh uninstall.sh && echo
 else
-then
 clear
 index
 fi
