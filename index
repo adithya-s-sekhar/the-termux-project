@@ -46,7 +46,7 @@ echo 'Do you want to uninstall (y/n): '
 read u
 if [ $u = "y" ]
 then
-cd ~ >/dev/null 2>&1
+cd ~
 cd the-termux-project
 sh uninstall.sh && echo
 else
