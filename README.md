@@ -37,6 +37,4 @@ The script provides an option to update changes from this repo right on the firs
 
 ## Uninstallation
 
-Type these commands to call the built-in uninstaller
- 1. `cd /data/data/com.termux/files/home/the-termux-project`
- 2. `sh uninstall.sh`
+The script provides an option to uninstall the script right on the first page.
