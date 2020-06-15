@@ -12,6 +12,8 @@ banner
 echo ''
 echo '----------------------------'
 echo '        youtube-dl'
+echo ''
+echo ' Supports more than youtube ;)'
 echo '----------------------------'
 
 echo ''
@@ -19,9 +21,22 @@ echo 'Enter URL: '
 read url
 
 echo ''
-echo 'Format list: '
-echo -e '1. MP4 360p\n2. MP4 480p\n3. MP4 720p\n4. MP4 1080p\n5. M4A 128k\n6. best\n7. worst'
+echo 'Format list'
 echo ''
+echo 'Video with audio'
+echo '1. MP4 360p - Video: H264 Audio: AAC'
+echo '2. MP4 480p - Video: H264 Audio: AAC'
+echo '3. MP4 720p - Video: H264 Audio: AAC'
+echo '4. MP4 1080p - Video: H264 Audio: AAC'
+echo ''
+echo 'Audio only'
+echo '5. M4A 128k - Audio: AAC'
+echo ''
+echo 'General'
+echo '6. best - Best provided by the website'
+echo '7. worst - Worst provided by the website'
+echo ''
+echo 'Choose format: '
 read fcode
 
 echo ''
