@@ -41,7 +41,9 @@ Some scripts for termux with inbuilt updater.
 ## Updation
 
 The script provides an option to update changes from this repo right on the first page.
+![updating ui](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/update.jpg?raw=true)
 
 ## Uninstallation
 
 The script provides an option to uninstall the script right on the first page.
+![uninstall ui](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/uninstall.jpg?raw=true)
