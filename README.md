@@ -4,9 +4,16 @@ Some scripts for termux with inbuilt updater.
 
 ## Currently includes:
 
-- WhatsApp status video maker
+- WhatsApp Status Creator Tool
 - Download manager for aria2c
 - Simple client for youtube-dl.
+
+## Screenshots
+
+![the-termux-project](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/index.jpg?raw=true)
+![WhatsApp Status Creator Tool](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/wastatus.jpg?raw=true)
+![aria2 Manager](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/aria2.jpg?raw=true)
+![youtube-dl](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/yt.jpg?raw=true)
 
 ## Installation
 
