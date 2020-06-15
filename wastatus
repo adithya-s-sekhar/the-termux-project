@@ -13,6 +13,7 @@ echo '1. Video status'
 echo ''
 echo '2. Audio status'
 echo ''
+echo 'Choose option: '
 
 read x
 
