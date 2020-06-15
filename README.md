@@ -1,4 +1,5 @@
 # The Termux Project
+![GitHub](https://img.shields.io/github/license/adithya-s-sekhar/the-termux-project) ![GitHub last commit](https://img.shields.io/github/last-commit/adithya-s-sekhar/the-termux-project?label=last%20update) 
 
 Some scripts for termux with inbuilt updater.
 
