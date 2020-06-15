@@ -1,5 +1,5 @@
 # The Termux Project
-![GitHub](https://img.shields.io/github/license/adithya-s-sekhar/the-termux-project) ![GitHub last commit](https://img.shields.io/github/last-commit/adithya-s-sekhar/the-termux-project?label=last%20updated) ![brag](https://img.shields.io/badge/made%20on-mobile%20%F0%9F%98%8E-blue) 
+![GitHub](https://img.shields.io/github/license/adithya-s-sekhar/the-termux-project) ![GitHub last commit](https://img.shields.io/github/last-commit/adithya-s-sekhar/the-termux-project?label=last%20updated) ![brag](https://img.shields.io/badge/made%20on-mobile-blue) 
 
 Some scripts for termux with inbuilt updater.
 
