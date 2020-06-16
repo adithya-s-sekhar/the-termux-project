@@ -11,10 +11,7 @@ Some scripts for termux with inbuilt updater.
 
 ## Screenshots
 
-![the-termux-project](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/index.jpg?raw=true)
-![WhatsApp Status Creator Tool](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/wastatus.jpg?raw=true)
-![aria2 Manager](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/aria2.jpg?raw=true)
-![youtube-dl](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/yt.jpg?raw=true)
+<img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/index.jpg?raw=true" width=300px><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/wastatus.jpg?raw=true" width=300px><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/aria2.jpg?raw=true" width=300px><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/yt.jpg?raw=true" width=300px><br>
 
 ## Installation
 
@@ -42,9 +39,9 @@ Some scripts for termux with inbuilt updater.
 ## Updation
 
 The script provides an option to update changes from this repo right on the first page.
-![updating ui](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/update.jpg?raw=true)
+<img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/update.jpg?raw=true" width=300px>
 
 ## Uninstallation
 
 The script provides an option to uninstall the script right on the first page.
-![uninstall ui](https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/uninstall.jpg?raw=true)
+<img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/uninstall.jpg?raw=true" width=300px>
