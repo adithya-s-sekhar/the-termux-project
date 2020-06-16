@@ -38,10 +38,10 @@ Some scripts for termux with inbuilt updater.
 
 ## Updation
 
-The script provides an option to update changes from this repo right on the first page.
-<img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/update.jpg?raw=true" width="150px">
+The script provides an option to update changes from this repo right on the first page.<br>
+<img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/update.jpg?raw=true" width="150px"><br>
 
 ## Uninstallation
 
-The script provides an option to uninstall the script right on the first page.
+The script provides an option to uninstall the script right on the first page.<br>
 <img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/uninstall.jpg?raw=true" width="150px">
