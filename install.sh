@@ -1,6 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Author: Adithya S Sekhar
 
+BIN=~/../usr/bin
+
 echo '---------------------'
 echo 'Beginning The Termux Project installation'
 echo ''
@@ -38,28 +40,28 @@ dos2unix termux-url-opener >/dev/null 2>&1
 echo '- copying scripts'
 
 # Copy custom scripts to /usr/bin
-cp banner /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp index /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp wastatus /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp wastatus-banner /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp wastatus-video /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp wastatus-audio /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp aria2manager /data/data/com.termux/files/usr/bin >/dev/null 2>&1
-cp yt /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+cp banner $BIN >/dev/null 2>&1
+cp index $BIN >/dev/null 2>&1
+cp wastatus $BIN >/dev/null 2>&1
+cp wastatus-banner $BIN >/dev/null 2>&1
+cp wastatus-video $BIN >/dev/null 2>&1
+cp wastatus-audio $BIN >/dev/null 2>&1
+cp aria2manager $BIN >/dev/null 2>&1
+cp yt $BIN >/dev/null 2>&1
 mkdir ~/bin >/dev/null 2>&1
-cp termux-url-opener /data/data/com.termux/files/home/bin >/dev/null 2>&1
+cp termux-url-opener ~/bin >/dev/null 2>&1
 
 # Set permission
 echo '- setting permissions'
-chmod +x /data/data/com.termux/files/usr/bin/banner >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/index >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/wastatus >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-banner >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-video >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/aria2manager >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/usr/bin/yt >/dev/null 2>&1
-chmod +x /data/data/com.termux/files/home/bin/termux-url-opener >/dev/null 2>&1
+chmod +x $BIN/banner >/dev/null 2>&1
+chmod +x $BIN/index >/dev/null 2>&1
+chmod +x $BIN/wastatus >/dev/null 2>&1
+chmod +x $BIN/wastatus-banner >/dev/null 2>&1
+chmod +x $BIN/wastatus-video >/dev/null 2>&1
+chmod +x $BIN/wastatus-audio >/dev/null 2>&1
+chmod +x $BIN/aria2manager >/dev/null 2>&1
+chmod +x $BIN/yt >/dev/null 2>&1
+chmod +x ~/bin/termux-url-opener >/dev/null 2>&1
 
 echo ''
 

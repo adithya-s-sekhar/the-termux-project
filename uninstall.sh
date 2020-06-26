@@ -1,6 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Author: Adithya S Sekhar
 
+BIN=~/../usr/bin
+
 echo '---------------------'
 echo 'Uninstalling The Termux Project'
 echo ''
@@ -27,15 +29,15 @@ echo ''
 
 # Remove scripts
 echo '2/3 Uninstalling scripts'
-rm /data/data/com.termux/files/usr/bin/banner >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/index >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/wastatus >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/wastatus-banner >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/wastatus-video >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/wastatus-audio >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/aria2manager >/dev/null 2>&1
-rm /data/data/com.termux/files/usr/bin/yt >/dev/null 2>&1
-rm /data/data/com.termux/files/home/bin/termux-url-opener >/dev/null 2>&1
+rm $BIN/banner >/dev/null 2>&1
+rm $BIN/index >/dev/null 2>&1
+rm $BIN/wastatus >/dev/null 2>&1
+rm $BIN/wastatus-banner >/dev/null 2>&1
+rm $BIN/wastatus-video >/dev/null 2>&1
+rm $BIN/wastatus-audio >/dev/null 2>&1
+rm $BIN/aria2manager >/dev/null 2>&1
+rm $BIN/yt >/dev/null 2>&1
+rm ~/bin/termux-url-opener >/dev/null 2>&1
 
 echo ''
 
