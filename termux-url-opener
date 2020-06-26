@@ -1,0 +1,68 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# yt as termux-url-opener
+
+fcode=
+conf=
+cd /sdcard/Videos
+
+clear
+banner
+
+echo ''
+echo '----------------------------'
+echo '        youtube-dl'
+echo ''
+echo ' Supports more than youtube ;)'
+echo '----------------------------'
+
+echo ''
+echo 'Enter URL: '
+echo $1
+
+echo ''
+echo 'Format list'
+echo ''
+echo 'Video with audio'
+echo '1. MP4 360p - Video: H264 Audio: AAC'
+echo '2. MP4 480p - Video: H264 Audio: AAC'
+echo '3. MP4 720p - Video: H264 Audio: AAC'
+echo '4. MP4 1080p - Video: H264 Audio: AAC'
+echo ''
+echo 'Audio only'
+echo '5. M4A 128k - Audio: AAC'
+echo ''
+echo 'General'
+echo '6. best - Best provided by the website'
+echo '7. worst - Worst provided by the website'
+echo ''
+echo 'Choose format: '
+read fcode
+
+echo ''
+if [ $fcode -eq 1 ]
+then
+conf='-f bestvideo[ext=mp4][height<=360]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 2 ]
+then
+conf='-f bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 3 ]
+then
+conf='-f bestvideo[ext=mp4][height<=720]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 4 ]
+then
+conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
+elif [ $fcode -eq 5 ]
+then
+conf='-f bestaudio[ext=m4a]'
+elif [ $fcode -eq 6 ]
+then
+conf='-f best'
+elif [ $fcode -eq 7 ]
+then
+conf='-f worst'
+else
+yt
+fi
+
+youtube-dl --ignore-errors --restrict-filenames --add-metadata --no-cache-dir $conf -o "%(title)s.%(ext)s" "$1"

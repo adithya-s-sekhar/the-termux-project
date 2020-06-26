@@ -35,6 +35,7 @@ rm /data/data/com.termux/files/usr/bin/wastatus-video >/dev/null 2>&1
 rm /data/data/com.termux/files/usr/bin/wastatus-audio >/dev/null 2>&1
 rm /data/data/com.termux/files/usr/bin/aria2manager >/dev/null 2>&1
 rm /data/data/com.termux/files/usr/bin/yt >/dev/null 2>&1
+rm /data/data/com.termux/files/home/bin/termux-url-opener >/dev/null 2>&1
 
 echo ''
 

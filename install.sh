@@ -33,6 +33,7 @@ dos2unix wastatus-video >/dev/null 2>&1
 dos2unix wastatus-audio >/dev/null 2>&1
 dos2unix aria2manager >/dev/null 2>&1
 dos2unix yt >/dev/null 2>&1
+dos2unix termux-url-opener >/dev/null 2>&1
 
 echo '- copying scripts'
 
@@ -45,6 +46,8 @@ cp wastatus-video /data/data/com.termux/files/usr/bin >/dev/null 2>&1
 cp wastatus-audio /data/data/com.termux/files/usr/bin >/dev/null 2>&1
 cp aria2manager /data/data/com.termux/files/usr/bin >/dev/null 2>&1
 cp yt /data/data/com.termux/files/usr/bin >/dev/null 2>&1
+mkdir ~/bin >/dev/null 2>&1
+cp termux-url-opener /data/data/com.termux/files/home/bin >/dev/null 2>&1
 
 # Set permission
 echo '- setting permissions'
@@ -56,6 +59,7 @@ chmod +x /data/data/com.termux/files/usr/bin/wastatus-video >/dev/null 2>&1
 chmod +x /data/data/com.termux/files/usr/bin/wastatus-audio >/dev/null 2>&1
 chmod +x /data/data/com.termux/files/usr/bin/aria2manager >/dev/null 2>&1
 chmod +x /data/data/com.termux/files/usr/bin/yt >/dev/null 2>&1
+chmod +x /data/data/com.termux/files/home/bin/termux-url-opener >/dev/null 2>&1
 
 echo ''
 
