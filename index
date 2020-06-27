@@ -11,7 +11,7 @@ echo '1. WaStatus'
 echo ''
 echo '2. aria2 Manager'
 echo ''
-echo '3. youtube-dl'
+echo "3. youtube-dl (You can also 'share' links to termux)"
 echo ''
 echo '4. Update'
 echo ''
