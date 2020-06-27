@@ -36,6 +36,59 @@ Some scripts for termux with inbuilt updater.
 >
 > `sh install.sh` as well
 
+## Usage Instructions
+
+### WaStatus - WhatsApp Status Creator Tool
+
+#### Video Status
+
+The WaStatus window contains, in order of appearance
+
+Input file: This is where you provide the name of the input file. By default the current folder is the root of your Internal Storage. 
+If the file is in any subfolder, give a path to the file starting from Internal.
+eg: If it's AwesomeVideo.mp4 in the Download folder, provide input like Download/AwesomeVideo.mp4
+
+It's recommended to just copy the input video outside any folder to the root of Internal Storage for ease of use.
+
+Start Time: The time at ffmpeg should start cutting the video. This should be given in 00:00:00 format.
+
+eg: For cutting at 3 minutes 20 seconds, Start Time: 00:03:20
+
+Length of video: How long should the video be cut. Give a value in seconds.
+
+eg: To cut 20 seconds, Length of video: 30
+
+Output filename: Name for the output file, can be anything.
+
+Cropping, Resizing, Rotating instructions will be added later. But those should be self explanatory.
+
+#### Audio Status
+
+soon™
+
+### aria2manager
+
+Paste URL, pick a filename and boom. It's just a simple downloader.
+
+To resume a download if a link expires, paste the new URL and pick the same filename.
+
+### youtube-dl
+
+Supports youtube videos, playlists, and other websites.
+
+Paste the URL, pick a format if it's a youtube link and it will try to download with that set as the maximum quality.
+
+If you pick 720p and it is not available, the script will auto choose the next higher quality.
+
+If the video isn't a youtube link, you can pick the best or worst option.
+
+PS: Embedding thumbnail to audio downloads is disabled since 27/June/2020 because YouTube has started to use WEBP instead of JPG which atomicparsley doesn't support.
+A patch was submitted to youtube-dl team which converts the thumbnail to jpg. This feature will be reenabled when that update drops ;)
+
+#### termux-url-opener
+
+You can also share any webpage with playing video to termux to start youtube-dl directly for that link.
+
 ## Updation
 
 The script provides an option to update changes from this repo right on the first page.<br>
