@@ -56,7 +56,7 @@ eg: For cutting at 3 minutes 20 seconds, Start Time: 00:03:20
 
 Length of video: How long should the video be cut. Give a value in seconds.
 
-eg: To cut 20 seconds, Length of video: 30
+eg: To cut 20 seconds, Length of video: 20
 
 Output filename: Name for the output file, can be anything.
 
