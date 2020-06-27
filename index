@@ -2,6 +2,8 @@
 # Author: Adithya S Sekhar
 # Index page
 
+ETC=~/../usr/etc
+
 banner
 
 echo ''
@@ -33,7 +35,7 @@ then
 echo ''
 echo 'Starting update'
 echo ''
-cd /data/data/com.termux/files/usr/etc >/dev/null 2>&1
+cd $ETC >/dev/null 2>&1
 rm bash.bashrc >/dev/null 2>&1
 mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
 cd ~

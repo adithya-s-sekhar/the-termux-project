@@ -2,6 +2,7 @@
 # Author: Adithya S Sekhar
 
 BIN=~/../usr/bin
+ETC=~/../usr/etc
 
 echo '---------------------'
 echo 'Uninstalling The Termux Project'
@@ -44,7 +45,7 @@ echo ''
 # Delete newbash and restore old bash
 echo '3/3 .bashrc'
 echo '- removing custom bashrc'
-cd /data/data/com.termux/files/usr/etc >/dev/null 2>&1
+cd $ETC >/dev/null 2>&1
 rm bash.bashrc >/dev/null 2>&1
 echo '- restoring old bashrc'
 mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1

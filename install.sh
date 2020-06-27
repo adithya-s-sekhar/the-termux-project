@@ -2,6 +2,7 @@
 # Author: Adithya S Sekhar
 
 BIN=~/../usr/bin
+ETC=~/../usr/etc
 
 echo '---------------------'
 echo 'Beginning The Termux Project installation'
@@ -70,9 +71,9 @@ echo '3/3 .bashrc'
 # Backup bash.bashrc and replace newbash
 echo '- backing up current bashrc'
 # Copy newbash.bashrc
-cp newbash.bashrc /data/data/com.termux/files/usr/etc >/dev/null 2>&1
+cp newbash.bashrc $ETC >/dev/null 2>&1
 echo '- installing custom bashrc'
-cd /data/data/com.termux/files/usr/etc >/dev/null 2>&1
+cd $ETC >/dev/null 2>&1
 mv bash.bashrc bash.bashrc.bak >/dev/null 2>&1
 mv newbash.bashrc bash.bashrc >/dev/null 2>&1
 
