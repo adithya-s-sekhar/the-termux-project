@@ -44,21 +44,21 @@ Some scripts for termux with inbuilt updater.
 
 The WaStatus window contains, in order of appearance
 
-Input file: This is where you provide the name of the input file. By default the current folder is the root of your Internal Storage. 
+<b>Input file:</b>This is where you provide the name of the input file. By default the current folder is the root of your Internal Storage. 
 If the file is in any subfolder, give a path to the file starting from Internal.
 eg: If it's AwesomeVideo.mp4 in the Download folder, provide input like Download/AwesomeVideo.mp4
 
 It's recommended to just copy the input video outside any folder to the root of Internal Storage for ease of use.
 
-Start Time: The time at ffmpeg should start cutting the video. This should be given in 00:00:00 format.
+<b>Start Time:</b> The time at ffmpeg should start cutting the video. This should be given in 00:00:00 format.
 
-eg: For cutting at 3 minutes 20 seconds, Start Time: 00:03:20
+<b>eg:</b> For cutting at 3 minutes 20 seconds, Start Time: 00:03:20
 
-Length of video: How long should the video be cut. Give a value in seconds.
+<b>Length of video:</b> How long should the video be cut. Give a value in seconds.
 
-eg: To cut 20 seconds, Length of video: 20
+<b>eg:</b> To cut 20 seconds, Length of video: 20
 
-Output filename: Name for the output file, can be anything.
+<b>Output filename:</b> Name for the output file, can be anything.
 
 Cropping, Resizing, Rotating instructions will be added later. But those should be self explanatory.
 
