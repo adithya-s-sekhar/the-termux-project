@@ -15,6 +15,8 @@ Some scripts for termux with inbuilt updater.
 
 ## Installation
 
+NOTE: Update termux inbuilt packages with `pkg upgrade` before continuing to prevent OpenSSL errors or youtube-dl won't install.
+
 1. Install termux from
 
 - [Play Store](https://play.google.com/store/apps/details?id=com.termux) or
