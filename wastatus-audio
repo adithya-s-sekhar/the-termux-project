@@ -41,36 +41,36 @@ read wa_scale
 echo ''
 if [ $wa_scale = "n" ]
 then
-if [ $wa_img = "cover" ]
-then
-ffmpeg -i "$wa_aud" -an tmp.jpg
-ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end tmp.mka
-	ffmpeg -loop 1 -i tmp.jpg -i tmp.mka -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out"
-	rm tmp.mka
-rm tmp.jpg
-else
-ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end tmp.mka
-	ffmpeg -loop 1 -i "$wa_img" -i tmp.mka -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out"
-	rm tmp.mka
-fi
-elif [ $wa_scale = "y" ]
-then
-	echo 'Resize Width: '
-	read wa_scalew
-	echo ''
-	echo 'Resize Height: '
-	read wa_scaleh
-	echo ''
 	if [ $wa_img = "cover" ]
-then
-ffmpeg -i "$wa_aud" -an tmp.jpg
-ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end tmp.mka
-	ffmpeg -loop 1 -i tmp.jpg -i tmp.mka -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out"
-rm tmp.jpg
-rm tmp.mka
-else
-ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end tmp.mka
-	ffmpeg -loop 1 -i "$wa_img" -i tmp.mka -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out"
-	rm tmp.mka
-fi
+	then
+		ffmpeg -i "$wa_aud" -an "tmp_$wa_aud.jpg"
+		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
+		ffmpeg -loop 1 -i "tmp_$wa_aud.jpg" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out"
+		rm "tmp_$wa_aud.mka"
+		rm "tmp_$wa_aud.jpg"
+	else
+		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
+		ffmpeg -loop 1 -i "$wa_img" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out"
+		rm "tmp_$wa_aud.mka"
+	fi
+	elif [ $wa_scale = "y" ]
+	then
+		echo 'Resize Width: '
+		read wa_scalew
+		echo ''
+		echo 'Resize Height: '
+		read wa_scaleh
+		echo ''
+	if [ $wa_img = "cover" ]
+	then
+		ffmpeg -i "$wa_aud" -an "tmp_$wa_aud.jpg"
+		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
+		ffmpeg -loop 1 -i "tmp_$wa_aud.jpg" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out"
+		rm "tmp_$wa_aud.jpg"
+		rm "tmp_$wa_aud.mka"
+	else
+		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
+		ffmpeg -loop 1 -i "$wa_img" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out"
+		rm "tmp_$wa_aud.mka"
+	fi
 fi
