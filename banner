@@ -8,5 +8,3 @@ echo '                 The Termux Project'
 echo ''
 echo '            Last Updated: 25/July/2020'
 echo '************************************************'
-echo ''
-echo "Current directory is `pwd`"
