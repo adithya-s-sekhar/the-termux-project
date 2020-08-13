@@ -23,7 +23,7 @@ wastatus-banner
 echo 'Video Status'
 echo '------------'
 echo ''
-echo 'Input file (with ext): '
+echo 'Input video file (with extension): '
 read wa_in
 echo ''
 echo 'Start time in 00:00:00 format: '

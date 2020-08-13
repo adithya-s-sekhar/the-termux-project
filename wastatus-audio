@@ -20,7 +20,7 @@ wastatus-banner
 echo 'Audio Status'
 echo '------------'
 echo ''
-echo 'Input audio: '
+echo 'Input audio file (with extension): '
 read wa_aud
 echo ''
 echo "Background image ('cover' to select albumart): "
@@ -32,7 +32,7 @@ echo ''
 echo 'End time: '
 read wa_end
 echo ''
-echo 'Output filename (with ext): '
+echo 'Output filename: '
 read wa_out
 echo ''
 
@@ -45,12 +45,12 @@ then
 	then
 		ffmpeg -i "$wa_aud" -an "tmp_$wa_aud.jpg"
 		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
-		ffmpeg -loop 1 -i "tmp_$wa_aud.jpg" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out"
+		ffmpeg -loop 1 -i "tmp_$wa_aud.jpg" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out.mp4"
 		rm "tmp_$wa_aud.mka"
 		rm "tmp_$wa_aud.jpg"
 	else
 		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
-		ffmpeg -loop 1 -i "$wa_img" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out"
+		ffmpeg -loop 1 -i "$wa_img" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -c:a aac -b:a 64k -shortest "$wa_out.mp4"
 		rm "tmp_$wa_aud.mka"
 	fi
 	elif [ $wa_scale = "y" ]
@@ -65,12 +65,12 @@ then
 	then
 		ffmpeg -i "$wa_aud" -an "tmp_$wa_aud.jpg"
 		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
-		ffmpeg -loop 1 -i "tmp_$wa_aud.jpg" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out"
+		ffmpeg -loop 1 -i "tmp_$wa_aud.jpg" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out.mp4"
 		rm "tmp_$wa_aud.jpg"
 		rm "tmp_$wa_aud.mka"
 	else
 		ffmpeg -i "$wa_aud" -c copy -ss $wa_start -to $wa_end "tmp_$wa_aud.mka"
-		ffmpeg -loop 1 -i "$wa_img" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out"
+		ffmpeg -loop 1 -i "$wa_img" -i "tmp_$wa_aud.mka" -c:v libx264 -preset faster -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -pix_fmt yuv420p -vf "scale=$wa_scalew:$wa_scaleh" -c:a aac -b:a 64k -shortest "$wa_out.mp4"
 		rm "tmp_$wa_aud.mka"
 	fi
 fi
