@@ -19,10 +19,10 @@ read x
 
 if [ $x -eq 1 ]
 then
- wastatus-video
+    wastatus-video
 elif [ $x -eq 2 ]
 then
- wastatus-audio
+    wastatus-audio
 else
- wastatus
+    wastatus
 fi
