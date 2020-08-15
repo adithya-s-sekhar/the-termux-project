@@ -42,27 +42,27 @@ read fcode
 echo ''
 if [ $fcode -eq 1 ]
 then
-conf='-f bestvideo[ext=mp4][height<=360]+bestaudio[ext=m4a]'
+    conf='-f bestvideo[ext=mp4][height<=360]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 2 ]
 then
-conf='-f bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]'
+    conf='-f bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 3 ]
 then
-conf='-f bestvideo[ext=mp4][height<=720]+bestaudio[ext=m4a]'
+    conf='-f bestvideo[ext=mp4][height<=720]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 4 ]
 then
-conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
+    conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 5 ]
 then
-conf='-f bestaudio[ext=m4a]'
+    conf='-f bestaudio[ext=m4a]'
 elif [ $fcode -eq 6 ]
 then
-conf='-f best'
+    conf='-f best'
 elif [ $fcode -eq 7 ]
 then
-conf='-f worst'
+    conf='-f worst'
 else
-yt
+    yt
 fi
 
 youtube-dl --ignore-errors --add-metadata --no-cache-dir $conf -o "%(title)s.%(ext)s" "$url"
