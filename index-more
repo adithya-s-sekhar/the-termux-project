@@ -8,7 +8,7 @@ clear
 banner
 
 echo ''
-echo 'Current release: 16/Aug/2020'
+echo 'Current release: v0.1 - 16/Aug/2020'
 echo ''
 echo 'Changelog'
 echo '* increase wastatus encoding performance and reduced output file size'
