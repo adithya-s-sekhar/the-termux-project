@@ -4,6 +4,7 @@
 
 ETC=~/../usr/etc
 
+clear
 banner
 
 echo ''
