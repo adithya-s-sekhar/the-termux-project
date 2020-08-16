@@ -20,20 +20,15 @@ echo '* add video height to end of downloaded filename'
 echo ''
 echo 'https://github.com/adithya-s-sekhar/the-termux-project'
 echo ''
-echo '0. Go back'
 echo ''
 echo '1. Update'
 echo ''
 echo '2. Uninstall'
 echo ''
-echo 'Press ENTER to skip this menu'
+echo 'Press ENTER to go back'
 echo ''
 echo 'Choose option: '
 read i
-if [ $i -eq 0 ]
-then
-	clear
-	index
 elif [ $i -eq 2 ]
 then
 	echo 'Do you want to uninstall (y/n): '
@@ -61,4 +56,5 @@ then
 	sh remote-install.sh && echo
 else
 	clear
+	index
 fi
