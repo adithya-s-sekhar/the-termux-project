@@ -40,7 +40,7 @@ then
 		sh uninstall.sh && echo
 	else
 		clear
-		index
+		index-more
 	fi
 elif [ $i -eq 1 ]
 then
