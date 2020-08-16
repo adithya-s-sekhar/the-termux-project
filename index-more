@@ -8,13 +8,13 @@ clear
 banner
 
 echo ''
-echo 'The Termux Project'
 echo 'Current release: 16/Aug/2020'
 echo ''
 echo 'Changelog'
 echo '* increase wastatus encoding performance and reduced output file size'
 echo '* add go back option to all main scripts'
 echo '* seperate additional options as more page (this page)'
+echo '* new versioning scheme, starting v0.1'
 echo ''
 echo 'https://github.com/adithya-s-sekhar/the-termux-project'
 echo ''
