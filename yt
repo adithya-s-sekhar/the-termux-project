@@ -20,7 +20,7 @@ echo ''
 echo 'Enter 0 as URL to go back'
 echo 'Enter URL: '
 read url
-if [ $url -eq 0 ]
+if [ $url -eq 0 ] >/dev/null 2>&1
 then
     clear
     index
