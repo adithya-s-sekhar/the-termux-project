@@ -17,6 +17,7 @@ echo '* seperate additional options as more page (this page)'
 echo '* new versioning scheme, starting v0.1'
 echo '* cleanup UI'
 echo '* add video height to end of downloaded filename'
+echo '* fix bugs (see git repo)'
 echo ''
 echo 'https://github.com/adithya-s-sekhar/the-termux-project'
 echo ''
@@ -29,7 +30,7 @@ echo 'Press ENTER to go back'
 echo ''
 echo 'Choose option: '
 read i
-elif [ $i -eq 2 ]
+if [ $i -eq 2 ]
 then
 	echo 'Do you want to uninstall (y/n): '
 	read u
