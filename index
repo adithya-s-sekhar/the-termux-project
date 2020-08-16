@@ -33,7 +33,7 @@ then
 	yt
 elif [ $i -eq 4 ]
 then
-	more
+	index-more
 else
 	clear
 fi
