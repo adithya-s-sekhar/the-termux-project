@@ -37,6 +37,7 @@ dos2unix wastatus-audio >/dev/null 2>&1
 dos2unix aria2manager >/dev/null 2>&1
 dos2unix yt >/dev/null 2>&1
 dos2unix termux-url-opener >/dev/null 2>&1
+dos2unix index-more >/dev/null 2>&1
 
 echo '- copying scripts'
 
@@ -49,6 +50,7 @@ cp wastatus-video $BIN >/dev/null 2>&1
 cp wastatus-audio $BIN >/dev/null 2>&1
 cp aria2manager $BIN >/dev/null 2>&1
 cp yt $BIN >/dev/null 2>&1
+cp index-more $BIN >/dev/null 2>&1
 mkdir ~/bin >/dev/null 2>&1
 cp termux-url-opener ~/bin >/dev/null 2>&1
 
@@ -62,6 +64,7 @@ chmod +x $BIN/wastatus-video >/dev/null 2>&1
 chmod +x $BIN/wastatus-audio >/dev/null 2>&1
 chmod +x $BIN/aria2manager >/dev/null 2>&1
 chmod +x $BIN/yt >/dev/null 2>&1
+chmod +x $BIN/index-more >/dev/null 2>&1
 chmod +x ~/bin/termux-url-opener >/dev/null 2>&1
 
 echo ''
