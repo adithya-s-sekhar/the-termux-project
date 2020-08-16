@@ -5,4 +5,6 @@
 echo ''
 echo '-----------------------------------'
 echo '    WhatsApp Status Creater Tool'
+echo ''
+echo ' Files should be in root of internal storage'
 echo '-----------------------------------'
