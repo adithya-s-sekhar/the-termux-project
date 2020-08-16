@@ -9,7 +9,7 @@ Some scripts for termux with inbuilt updater.
 - Download manager for aria2c
 - Simple client for youtube-dl
 
-## Screenshots
+## Screenshots (Old, soon to be updated)
 
 <img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/index.jpg?raw=true" width="150px"><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/wastatus.jpg?raw=true" width="150px"><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/aria2.jpg?raw=true" width="150px"><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/yt.jpg?raw=true" width="150px"><br>
 
