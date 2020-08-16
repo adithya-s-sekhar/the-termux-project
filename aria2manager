@@ -16,8 +16,14 @@ echo ' Downloads are in Internal Storage/Download'
 echo '-------------------------------------------'
 
 echo ''
+echo 'Enter 0 to go back'
 echo 'Enter URL: '
 read url
+if [ $url -eq 0 ]
+then
+    clear
+    index
+fi
 echo ''
 echo 'Enter filename: '
 read file
