@@ -26,6 +26,8 @@ echo '1. Update'
 echo ''
 echo '2. Uninstall'
 echo ''
+echo 'Press ENTER to skip this menu'
+echo ''
 echo 'Choose option: '
 read i
 if [ $i -eq 0 ]
