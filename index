@@ -7,15 +7,16 @@ ETC=~/../usr/etc
 banner
 
 echo ''
+echo 'Available scripts'
+echo '--------------'
+echo ''
 echo '1. WaStatus'
 echo ''
 echo '2. aria2 Manager'
 echo ''
 echo "3. youtube-dl (You can also 'share' links to termux)"
 echo ''
-echo '4. Update'
-echo ''
-echo '5. Uninstall'
+echo '4. More'
 echo ''
 echo 'Press ENTER to skip this menu'
 echo ''
@@ -30,31 +31,9 @@ then
 elif [ $i -eq 3 ]
 then
 	yt
-elif [ $i -eq 5 ]
-then
-	echo 'Do you want to uninstall (y/n): '
-	read u
-	if [ $u = "y" ]
-	then
-		cd ~
-		cd the-termux-project
-		sh uninstall.sh && echo
-	else
-		clear
-		index
-	fi
 elif [ $i -eq 4 ]
 then
-	echo ''
-	echo 'Starting update'
-	echo ''
-	cd $ETC >/dev/null 2>&1
-	rm bash.bashrc >/dev/null 2>&1
-	mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
-	cd ~
-	rm remote-install.sh
-	curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/remote-install.sh' -o remote-install.sh >/dev/null 2>&1
-	sh remote-install.sh && echo
+	more
 else
 	clear
 fi

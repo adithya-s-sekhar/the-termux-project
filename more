@@ -1,0 +1,59 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Author: Adithya S Sekhar
+# Index page
+
+ETC=~/../usr/etc
+
+banner
+
+echo ''
+echo 'The Termux Project'
+echo 'Current release: 16/Aug/2020'
+echo ''
+echo 'Changelog'
+echo '* increase wastatus encoding performance and reduced output file size'
+echo '* add go back option to all main scripts'
+echo '* seperate additional options as more page (this page)'
+echo ''
+echo 'https://github.com/adithya-s-sekhar/the-termux-project'
+echo ''
+echo '0. Go back'
+echo ''
+echo '1. Update'
+echo ''
+echo '2. Uninstall'
+echo ''
+echo 'Choose option: '
+read i
+if [ $i -eq 0 ]
+then
+	clear
+	index
+elif [ $i -eq 2 ]
+then
+	echo 'Do you want to uninstall (y/n): '
+	read u
+	if [ $u = "y" ]
+	then
+		cd ~
+		cd the-termux-project
+		sh uninstall.sh && echo
+	else
+		clear
+		index
+	fi
+elif [ $i -eq 1 ]
+then
+	echo ''
+	echo 'Starting update'
+	echo ''
+	cd $ETC >/dev/null 2>&1
+	rm bash.bashrc >/dev/null 2>&1
+	mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
+	cd ~
+	rm remote-install.sh
+	curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/remote-install.sh' -o remote-install.sh >/dev/null 2>&1
+	sh remote-install.sh && echo
+else
+	clear
+fi
