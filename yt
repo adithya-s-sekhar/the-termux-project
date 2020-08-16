@@ -65,4 +65,4 @@ else
     yt
 fi
 
-youtube-dl --ignore-errors --add-metadata --no-cache-dir $conf -o "%(title)s.%(ext)s" "$url"
+youtube-dl --ignore-errors --add-metadata --no-cache-dir $conf -o "%(title)s-%(height)s.%(ext)s" "$url"
