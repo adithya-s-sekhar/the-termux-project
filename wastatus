@@ -9,6 +9,8 @@ banner
 wastatus-banner
 
 echo ''
+echo '0. Go back'
+echo ''
 echo '1. Video status'
 echo ''
 echo '2. Audio status'
@@ -17,7 +19,11 @@ echo 'Choose option: '
 
 read x
 
-if [ $x -eq 1 ]
+if [ $x -eq 0 ]
+then
+    clear
+    index
+elif [ $x -eq 1 ]
 then
     wastatus-video
 elif [ $x -eq 2 ]
