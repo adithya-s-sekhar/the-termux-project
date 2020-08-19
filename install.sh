@@ -80,7 +80,7 @@ cd $ETC >/dev/null 2>&1
 mv bash.bashrc bash.bashrc.bak >/dev/null 2>&1
 mv newbash.bashrc bash.bashrc >/dev/null 2>&1
 
-echo ''
-echo 'Scripts are installed, restart termux now.'
-
 cd /sdcard
+
+clear
+index
