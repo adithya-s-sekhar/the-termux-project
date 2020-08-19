@@ -20,7 +20,9 @@ Some scripts for termux with inbuilt updater.
 There are 3 installation methods available
 
 <b>A) From remote-install.sh</b>: Uses [remote-install.sh](https://github.com/adithya-s-sekhar/the-termux-project/blob/master/remote-install.sh) to get and install the scripts from this github repo. (Check source in linked file)
+
 <b>B) Clone and use install.sh</b>: Clone this repo and use the included install.sh file. (You'll need to install git and change directories manually on termux)
+
 <b>C) Using latest release</b>: [Download latest release](https://github.com/adithya-s-sekhar/the-termux-project/releases), extract to internal storage and use install.sh. (even more hassle)
 
 ### A) From remote-install.sh (easiest and preffered)
