@@ -13,15 +13,15 @@ echo ''
 # Install ffmpeg, aria2, python, atomicparsley and youtube-dl
 echo '1/3 Installing dependencies'
 echo '- ffmpeg'
-pkg install ffmpeg -y >/dev/null 2>&1
+pkg install ffmpeg -y
 echo '- aria2'
-pkg install aria2 -y >/dev/null 2>&1
+pkg install aria2 -y
 echo '- python'
-pkg install python -y >/dev/null 2>&1
+pkg install python -y
 echo '- atomicparsley'
-pkg install atomicparsley -y >/dev/null 2>&1
+pkg install atomicparsley -y
 echo '- youtube-dl'
-pip install youtube-dl >/dev/null 2>&1
+pip install youtube-dl
 
 echo ''
 
