@@ -17,6 +17,8 @@ Some scripts for termux with inbuilt updater.
 
 <b>NOTE: Update termux inbuilt packages with `pkg upgrade` before continuing to prevent OpenSSL errors or youtube-dl won't install.</b>
 
+<b>Sometimes python or some of it's dependencies will fail to install (bad network). In which case you can use the updater function to install the missing ones.</b>
+
 There are 3 installation methods available
 
 <b>A) From remote-install.sh</b>: Uses [remote-install.sh](https://github.com/adithya-s-sekhar/the-termux-project/blob/master/remote-install.sh) to get and install the scripts from this github repo. (Check source in linked file)
