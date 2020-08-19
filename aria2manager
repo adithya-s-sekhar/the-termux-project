@@ -24,3 +24,9 @@ read file
 echo ''
 
 aria2c -d Download -c -x 4 -k 1M --file-allocation=none -o "$file" "$url"
+
+echo ''
+echo 'Task finished.'
+echo 'Press ENTER to return to aria2manager'
+read tmp
+sh aria2manager
