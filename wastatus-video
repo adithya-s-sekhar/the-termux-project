@@ -160,3 +160,9 @@ if [ $wa_crop = "n" ] && [ $wa_scale = "n" ] && [ $wa_tran = "n" ]
 then
 	ffmpeg -ss $wa_start -i "$wa_in" -t $wa_end -preset veryfast -crf 25 -maxrate:v $wa_maxdata -bufsize $wa_bufsize -movflags +faststart -tune fastdecode -tune zerolatency -b:a 64k "$wa_out.mp4"
 fi
+
+echo ''
+echo 'Task finished.'
+echo 'Press ENTER to return to wastatus'
+read tmp
+sh wastatus

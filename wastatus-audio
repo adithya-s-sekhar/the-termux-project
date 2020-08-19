@@ -74,3 +74,9 @@ then
 		rm "tmp_$wa_aud.mka"
 	fi
 fi
+
+echo ''
+echo 'Task finished.'
+echo 'Press ENTER to return to wastatus'
+read tmp
+sh wastatus
