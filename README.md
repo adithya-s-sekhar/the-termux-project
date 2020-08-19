@@ -87,6 +87,7 @@ There are 3 installation methods available
 4. Navigate to the folder by
 
 `cd /sdcard` (/sdcard is internal storage on android)
+
 `cd the-termux-project`
 
 6. Run the installation script by
