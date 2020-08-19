@@ -1,0 +1,20 @@
+v0.2 - 19/Aug/2020
+
+* add 'p' to end of resolution in downloaded filename
+* now shows dependency installation errors if it happens
+  - use 'update' function to reinstall missing dependancies if it happens
+  - python and by effect youtube-dl are the main offenders
+* minor updates to instructions and UI tweaks
+* proper finishing messages
+* start using github releases
+
+
+v0.1 - 16/Aug/2020
+
+* improve wastatus encoding performance by 50% and reduced output file size (ffmpeg presets are weird)
+* add go back option to some scripts
+* seperate additional options as more page (this page)
+* new versioning scheme, starting v0.1
+* cleanup UI
+* add video height to end of downloaded filename
+* fix bugs (see git repo)
