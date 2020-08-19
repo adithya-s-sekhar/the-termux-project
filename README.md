@@ -15,7 +15,15 @@ Some scripts for termux with inbuilt updater.
 
 ## Installation
 
-NOTE: Update termux inbuilt packages with `pkg upgrade` before continuing to prevent OpenSSL errors or youtube-dl won't install.
+<b>NOTE: Update termux inbuilt packages with `pkg upgrade` before continuing to prevent OpenSSL errors or youtube-dl won't install.</b>
+
+There are 3 installation methods available
+
+<b>A) From remote-install.sh</b>: Uses [remote-install.sh](https://github.com/adithya-s-sekhar/the-termux-project/blob/master/remote-install.sh) to get and install the scripts from this github repo. (Check source in linked file)
+<b>B) Clone and use install.sh</b>: Clone this repo and use the included install.sh file. (You'll need to install git and change directories manually on termux)
+<b>C) Using latest release</b>: [Download latest release](https://github.com/adithya-s-sekhar/the-termux-project/releases), extract to internal storage and use install.sh. (even more hassle)
+
+### A) From remote-install.sh (easiest and preffered)
 
 1. Install termux from
 
@@ -26,17 +34,62 @@ NOTE: Update termux inbuilt packages with `pkg upgrade` before continuing to pre
 
 `termux-setup-storage`
 
-3. Download the remote install script with
+3. Download the remote install script
 
 `curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/remote-install.sh' -o remote-install.sh`
 
-4. Run the remote install script by
+4. Run the remote install script
 
 `sh remote-install.sh`
 
-> You can also git clone this repo and do
->
-> `sh install.sh` as well
+### B) Clone and use install.sh
+
+1. Install termux from
+
+- [Play Store](https://play.google.com/store/apps/details?id=com.termux) or
+- [F-Droid](https://f-droid.org/en/packages/com.termux/)
+
+2. Grant storage permission to the app by typing
+
+`termux-setup-storage`
+
+3. Install git
+
+`pkg install git`
+
+4. Clone this repo
+
+`git clone --depth 1 https://github.com/adithya-s-sekhar/the-termux-project`
+
+5. Change into directory
+
+`cd the-termux-project`
+
+6. Run the installation script by
+
+`sh install.sh`
+
+### C) Using latest release
+
+1. Install termux from
+
+- [Play Store](https://play.google.com/store/apps/details?id=com.termux) or
+- [F-Droid](https://f-droid.org/en/packages/com.termux/)
+
+2. Grant storage permission to the app by typing
+
+`termux-setup-storage`
+
+3. [Download the latest release](https://github.com/adithya-s-sekhar/the-termux-project/releases) and extract 'the-termux-project' folder to the phone's internal storage.
+
+4. Navigate to the folder by
+
+`cd /sdcard` (/sdcard is internal storage on android)
+`cd the-termux-project`
+
+6. Run the installation script by
+
+`sh install.sh`
 
 ## Usage Instructions
 
