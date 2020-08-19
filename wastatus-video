@@ -165,4 +165,4 @@ echo ''
 echo 'Task finished.'
 echo 'Press ENTER to return to wastatus'
 read tmp
-sh wastatus
+wastatus

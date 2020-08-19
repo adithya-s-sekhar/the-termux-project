@@ -29,4 +29,4 @@ echo ''
 echo 'Task finished.'
 echo 'Press ENTER to return to aria2manager'
 read tmp
-sh aria2manager
+aria2manager

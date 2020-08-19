@@ -71,4 +71,4 @@ echo ''
 echo 'Task finished.'
 echo 'Press ENTER to return to youtube-dl'
 read tmp
-sh yt
+yt
