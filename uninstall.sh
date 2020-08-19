@@ -38,7 +38,6 @@ rm $BIN/wastatus-video >/dev/null 2>&1
 rm $BIN/wastatus-audio >/dev/null 2>&1
 rm $BIN/aria2manager >/dev/null 2>&1
 rm $BIN/yt >/dev/null 2>&1
-rm $BIN/index-more >/dev/null 2>&1
 rm ~/bin/termux-url-opener >/dev/null 2>&1
 
 echo ''

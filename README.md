@@ -3,15 +3,18 @@
 
 Some scripts for termux with inbuilt updater.
 
+
 ## Currently includes:
 
 - WhatsApp Status Creator Tool
 - Download manager for aria2c
 - Simple client for youtube-dl
 
+
 ## Screenshots (Old, soon to be updated)
 
 <img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/index.jpg?raw=true" width="150px"><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/wastatus.jpg?raw=true" width="150px"><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/aria2.jpg?raw=true" width="150px"><img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/yt.jpg?raw=true" width="150px"><br>
+
 
 ## Installation
 
@@ -25,7 +28,6 @@ There are 3 installation methods available
 
 <b>B) Clone and use install.sh</b>: Clone this repo and use the included install.sh file. (You'll need to install git and change directories manually on termux)
 
-<b>C) Using latest release</b>: [Download latest release](https://github.com/adithya-s-sekhar/the-termux-project/releases), extract to internal storage and use install.sh. (even more hassle)
 
 ### A) From remote-install.sh (easiest and preffered)
 
@@ -45,6 +47,7 @@ There are 3 installation methods available
 4. Run the remote install script
 
 `sh remote-install.sh`
+
 
 ### B) Clone and use install.sh
 
@@ -73,30 +76,9 @@ There are 3 installation methods available
 
 `sh install.sh`
 
-### C) Using latest release
-
-1. Install termux from
-
-- [Play Store](https://play.google.com/store/apps/details?id=com.termux) or
-- [F-Droid](https://f-droid.org/en/packages/com.termux/)
-
-2. Grant storage permission to the app by typing
-
-`termux-setup-storage`
-
-3. [Download the latest release](https://github.com/adithya-s-sekhar/the-termux-project/releases) and extract 'the-termux-project' folder to the phone's internal storage.
-
-4. Navigate to the folder by
-
-`cd /sdcard` (/sdcard is internal storage on android)
-
-`cd the-termux-project`
-
-6. Run the installation script by
-
-`sh install.sh`
 
 ## Usage Instructions
+
 
 ### WaStatus - WhatsApp Status Creator Tool
 
@@ -126,11 +108,13 @@ Cropping, Resizing, Rotating instructions will be added later. But those should 
 
 soon™
 
+
 ### aria2manager
 
 Paste URL, pick a filename and boom. It's just a simple downloader.
 
 To resume a download if a link expires, paste the new URL and pick the same filename.
+
 
 ### youtube-dl
 
@@ -149,10 +133,12 @@ A patch was submitted to youtube-dl team which converts the thumbnail to jpg. Th
 
 You can also share any webpage with playing video to termux to start youtube-dl directly for that link.
 
+
 ## Updation
 
 The script provides an option to update changes from this repo right on the first page.<br>
 <img src="https://github.com/adithya-s-sekhar/screenshot-repo/blob/master/the-termux-project/update.jpg?raw=true" width="150px"><br>
+
 
 ## Uninstallation
 
