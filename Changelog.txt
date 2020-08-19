@@ -6,6 +6,7 @@ v0.2 - 19/Aug/2020
   - python and by effect youtube-dl are the main offenders
 * minor updates to instructions and UI tweaks
 * proper finishing messages
+* returns to current script after finishing
 * start using github releases
 
 
