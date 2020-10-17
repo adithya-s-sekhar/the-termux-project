@@ -54,7 +54,7 @@ then
     conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 5 ]
 then
-    conf='--add-metadata -f bestaudio[ext=m4a]'
+    conf='--add-metadata --embed-thumbnail -f bestaudio[ext=m4a]'
 elif [ $fcode -eq 6 ]
 then
     conf='-f best'
