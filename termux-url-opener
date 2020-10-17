@@ -54,7 +54,7 @@ then
     conf='-f bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]'
 elif [ $fcode -eq 5 ]
 then
-    conf='-f bestaudio[ext=m4a]'
+    conf='--add-metadata -f bestaudio[ext=m4a]'
 elif [ $fcode -eq 6 ]
 then
     conf='-f best'
@@ -65,4 +65,4 @@ else
     yt
 fi
 
-youtube-dl --ignore-errors --add-metadata --no-cache-dir $conf -o "%(title)s-%(height)sp.%(ext)s" "$1"
+youtube-dl --ignore-errors --no-cache-dir $conf -o "%(title)s-%(height)sp.%(ext)s" "$1"
