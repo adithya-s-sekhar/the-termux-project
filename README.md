@@ -82,6 +82,8 @@ There are 2 installation methods available
 
 ### WaStatus - WhatsApp Status Creator Tool
 
+By creating videos with this tool, you can skip WhatsApp's awful low quality processing and upload it at the maximum quality possible.
+
 #### Video Status
 
 The WaStatus window contains, in order of appearance
