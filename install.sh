@@ -7,6 +7,8 @@ ETC=~/../usr/etc
 echo '---------------------'
 echo 'Beginning The Termux Project installation'
 echo ''
+echo '04/Mar/2021'
+echo ''
 echo 'https://www.github.com/adithya-s-sekhar/the-termux-project'
 echo '---------------------'
 echo ''
