@@ -56,8 +56,10 @@ then
 	mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
 	cd ~
 	rm remote-install.sh
-	curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/remote-install.sh' -o remote-install.sh >/dev/null 2>&1
-	sh remote-install.sh && echo
+	pkg install git >/dev/null 2>&1
+	git clone --depth 1 https://github.com/adithya-s-sekhar/the-termux-project >/dev/null 2>&1
+	cd the-termux-project
+	sh install.sh && echo
 else
 	clear
 fi
