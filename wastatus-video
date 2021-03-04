@@ -13,8 +13,8 @@ wa_cropw=
 wa_croph=
 wa_scalew=
 wa_scaleh=
-wa_maxdata=1692k
-wa_bufsize=1692k
+wa_maxdata=2336k
+wa_bufsize=2336k
 
 clear
 banner
