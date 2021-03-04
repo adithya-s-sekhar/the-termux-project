@@ -55,7 +55,6 @@ then
 	rm bash.bashrc >/dev/null 2>&1
 	mv bash.bashrc.bak bash.bashrc >/dev/null 2>&1
 	cd ~
-	rm remote-install.sh
 	pkg install git >/dev/null 2>&1
 	rm -rf the-termux-project
 	git clone --depth 1 https://github.com/adithya-s-sekhar/the-termux-project >/dev/null 2>&1
