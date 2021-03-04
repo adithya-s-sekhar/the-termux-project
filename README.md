@@ -22,34 +22,7 @@ Some scripts for termux with inbuilt updater.
 
 <b>Sometimes python or some of it's dependencies will fail to install (bad network). In which case you can use the updater function to install the missing ones.</b>
 
-There are 2 installation methods available
-
-<b>A) From remote-install.sh</b>: Uses [remote-install.sh](https://github.com/adithya-s-sekhar/the-termux-project/blob/master/remote-install.sh) to get and install the scripts from this github repo. (Check source in linked file)
-
-<b>B) Clone and use install.sh</b>: Clone this repo and use the included install.sh file. (You'll need to install git and change directories manually on termux)
-
-
-### A) From remote-install.sh (easiest and preffered)
-
-1. Install termux from
-
-- [Play Store](https://play.google.com/store/apps/details?id=com.termux) or
-- [F-Droid](https://f-droid.org/en/packages/com.termux/)
-
-2. Grant storage permission to the app by typing
-
-`termux-setup-storage`
-
-3. Download the remote install script
-
-`curl 'https://raw.githubusercontent.com/adithya-s-sekhar/the-termux-project/master/remote-install.sh' -o remote-install.sh`
-
-4. Run the remote install script
-
-`sh remote-install.sh`
-
-
-### B) Clone and use install.sh
+### Clone and use install.sh
 
 1. Install termux from
 
